@@ -27,7 +27,21 @@ namespace CHMS.API.Controllers
 
             // Trả về kết quả chuẩn format ApiResponse
             // (Hàm SuccessResult bạn đã có trong file ApiResponse.cs ở Domain)
-            return Ok(ApiResponse<UserResponseDTO>.SuccessResult(result, "Đăng ký thành công!"));
+            return Ok(ApiResponse<UserResponseDTO>.SuccessResult(result, "Vui lòng kiểm tra email để nhập OTP."));
+        }
+
+        [HttpPost("verify-otp")]
+        public async Task<IActionResult> VerifyOtp([FromBody] VerifyOtpRequestDTO request)
+        {
+            try
+            {
+                await _authService.VerifyOtpAsync(request.Email, request.OtpCode);
+                return Ok(ApiResponse.SuccessResult("Kích hoạt tài khoản thành công!"));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ApiResponse.ErrorResult(ex.Message));
+            }
         }
     }
 }

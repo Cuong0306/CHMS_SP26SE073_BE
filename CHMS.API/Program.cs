@@ -5,6 +5,7 @@ using CHMS.DAL.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using AutoMapper;
+using CHMS.BLL.Services.Implementations;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,6 +25,8 @@ builder.Services.AddAutoMapper(cfg =>
 {
     cfg.AddProfile<CHMS.BLL.Mappings.MappingProfile>();
 });
+builder.Services.AddMemoryCache();
+builder.Services.AddScoped<EmailService>();
 // Database
 builder.Services.AddDatabase(builder.Configuration);
 

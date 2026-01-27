@@ -11,5 +11,7 @@ namespace CHMS.BLL.Services.Interfaces
     public interface IAuthService
     {
         Task<UserResponseDTO> RegisterAsync(RegisterRequestDTO registerDto);
+
+        Task<bool> VerifyOtpAsync(string email, string inputOtp);
     }
 }
