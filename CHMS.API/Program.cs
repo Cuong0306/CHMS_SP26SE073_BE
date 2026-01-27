@@ -1,7 +1,10 @@
 ﻿using CHMS.API.Extensions;
 using CHMS.API.Middlewares;
+using CHMS.BLL.Services.Interfaces;
 using CHMS.DAL.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using AutoMapper;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +18,12 @@ builder.Services.AddDbContext<CoastalHomestayDBContext>(options =>
 
 // ========== SERVICES ==========
 
+builder.Services.AddScoped<IAuthService, CHMS.BLL.Services.Implementations.AuthService>();
+builder.Services.AddScoped<CHMS.DAL.Common.IUnitOfWork, CHMS.DAL.Common.UnitOfWork>();
+builder.Services.AddAutoMapper(cfg =>
+{
+    cfg.AddProfile<CHMS.BLL.Mappings.MappingProfile>();
+});
 // Database
 builder.Services.AddDatabase(builder.Configuration);
 
@@ -28,7 +37,7 @@ builder.Services.AddServices();
 builder.Services.AddThirdPartyServices(builder.Configuration);
 
 // AutoMapper
-builder.Services.AddAutoMapperProfiles();
+//builder.Services.AddAutoMapperProfiles();
 
 // CORS
 builder.Services.AddCorsPolicy(builder.Configuration);
@@ -52,7 +61,7 @@ var app = builder.Build();
 // ========== MIDDLEWARE PIPELINE ==========
 
 // Exception handling (đặt đầu tiên để bắt tất cả exceptions)
-app.UseExceptionMiddleware();
+//app.UseExceptionMiddleware();
 
 // Swagger (chỉ trong Development)
 if (app.Environment.IsDevelopment())

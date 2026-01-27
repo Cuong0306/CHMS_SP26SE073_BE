@@ -1,5 +1,8 @@
 ﻿using CHMS.DAL.Data;
 using Microsoft.EntityFrameworkCore.Storage;
+using CHMS.DAL.Repositories.Implementations;
+using CHMS.DAL.Repositories.Interfaces;
+using CHMS.DAL.Entities;
 
 namespace CHMS.DAL.Common;
 
@@ -20,13 +23,18 @@ public class UnitOfWork : IUnitOfWork
     #region Repositories
 
     // Lazy loading repositories - chỉ tạo khi cần
-    // private IUserRepository? _userRepository;
+     private IUserRepository? _userRepository;
     // private IHomestayRepository? _homestayRepository;
     // private IBookingRepository? _bookingRepository;
 
-    // public IUserRepository Users => _userRepository ??= new UserRepository(_context);
+    private IGenericRepository<UserRole>? _userRoleRepository;
+
+    public IUserRepository Users => _userRepository ??= new UserRepository(_context);
     // public IHomestayRepository Homestays => _homestayRepository ??= new HomestayRepository(_context);
     // public IBookingRepository Bookings => _bookingRepository ??= new BookingRepository(_context);
+
+    public IGenericRepository<UserRole> UserRoles =>
+        _userRoleRepository ??= new GenericRepository<UserRole>(_context);
 
     #endregion
 

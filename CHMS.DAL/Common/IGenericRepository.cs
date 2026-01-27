@@ -13,7 +13,7 @@ public interface IGenericRepository<T> where T : class
     /// <summary>
     /// Lấy entity theo Id
     /// </summary>
-    Task<T?> GetByIdAsync(int id);
+    Task<T?> GetByIdAsync(object id);
 
     /// <summary>
     /// Lấy entity theo điều kiện
@@ -110,7 +110,7 @@ public interface IGenericRepository<T> where T : class
     /// <summary>
     /// Xóa mềm entity
     /// </summary>
-    Task SoftDeleteAsync(int id);
+    Task SoftDeleteAsync(object id);
 
     #endregion
 

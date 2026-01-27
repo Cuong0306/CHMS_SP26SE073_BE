@@ -21,7 +21,7 @@ public class GenericRepository<T> : IGenericRepository<T> where T : class
 
     #region Get Methods
 
-    public virtual async Task<T?> GetByIdAsync(int id)
+    public virtual async Task<T?> GetByIdAsync(object id)
     {
         return await _dbSet.FindAsync(id);
     }
@@ -162,7 +162,7 @@ public class GenericRepository<T> : IGenericRepository<T> where T : class
         _dbSet.RemoveRange(entities);
     }
 
-    public virtual async Task SoftDeleteAsync(int id)
+    public virtual async Task SoftDeleteAsync(object id)
     {
         var entity = await GetByIdAsync(id);
         if (entity != null)

@@ -15,3 +15,21 @@ C:\Users\acer\Desktop\Capstone Project\Coastal Homestay Management System\CHMS_B
 C:\Users\acer\Desktop\Capstone Project\Coastal Homestay Management System\CHMS_BE\CHMS.BLL\obj\Debug\net8.0\refint\CHMS.BLL.dll
 C:\Users\acer\Desktop\Capstone Project\Coastal Homestay Management System\CHMS_BE\CHMS.BLL\obj\Debug\net8.0\CHMS.BLL.pdb
 C:\Users\acer\Desktop\Capstone Project\Coastal Homestay Management System\CHMS_BE\CHMS.BLL\obj\Debug\net8.0\ref\CHMS.BLL.dll
+D:\github\CHMS_SP26SE073_BE\CHMS.BLL\bin\Debug\net8.0\CHMS.BLL.deps.json
+D:\github\CHMS_SP26SE073_BE\CHMS.BLL\bin\Debug\net8.0\CHMS.BLL.dll
+D:\github\CHMS_SP26SE073_BE\CHMS.BLL\bin\Debug\net8.0\CHMS.BLL.pdb
+D:\github\CHMS_SP26SE073_BE\CHMS.BLL\bin\Debug\net8.0\CHMS.DAL.dll
+D:\github\CHMS_SP26SE073_BE\CHMS.BLL\bin\Debug\net8.0\CHMS.Domain.dll
+D:\github\CHMS_SP26SE073_BE\CHMS.BLL\bin\Debug\net8.0\CHMS.DAL.pdb
+D:\github\CHMS_SP26SE073_BE\CHMS.BLL\bin\Debug\net8.0\CHMS.Domain.pdb
+D:\github\CHMS_SP26SE073_BE\CHMS.BLL\obj\Debug\net8.0\CHMS.BLL.csproj.AssemblyReference.cache
+D:\github\CHMS_SP26SE073_BE\CHMS.BLL\obj\Debug\net8.0\CHMS.BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\github\CHMS_SP26SE073_BE\CHMS.BLL\obj\Debug\net8.0\CHMS.BLL.AssemblyInfoInputs.cache
+D:\github\CHMS_SP26SE073_BE\CHMS.BLL\obj\Debug\net8.0\CHMS.BLL.AssemblyInfo.cs
+D:\github\CHMS_SP26SE073_BE\CHMS.BLL\obj\Debug\net8.0\CHMS.BLL.csproj.CoreCompileInputs.cache
+D:\github\CHMS_SP26SE073_BE\CHMS.BLL\obj\Debug\net8.0\CHMS.BLL.sourcelink.json
+D:\github\CHMS_SP26SE073_BE\CHMS.BLL\obj\Debug\net8.0\CHMS.BLL.csproj.Up2Date
+D:\github\CHMS_SP26SE073_BE\CHMS.BLL\obj\Debug\net8.0\CHMS.BLL.dll
+D:\github\CHMS_SP26SE073_BE\CHMS.BLL\obj\Debug\net8.0\refint\CHMS.BLL.dll
+D:\github\CHMS_SP26SE073_BE\CHMS.BLL\obj\Debug\net8.0\CHMS.BLL.pdb
+D:\github\CHMS_SP26SE073_BE\CHMS.BLL\obj\Debug\net8.0\ref\CHMS.BLL.dll

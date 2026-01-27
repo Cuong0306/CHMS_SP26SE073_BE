@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\acer\\Desktop\\Capstone Project\\Coastal Homestay Management System\\CHMS_BE\\CHMS.API\\CHMS.API.csproj": {}
+    "D:\\github\\CHMS_SP26SE073_BE\\CHMS.API\\CHMS.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\acer\\Desktop\\Capstone Project\\Coastal Homestay Management System\\CHMS_BE\\CHMS.API\\CHMS.API.csproj": {
+    "D:\\github\\CHMS_SP26SE073_BE\\CHMS.API\\CHMS.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\acer\\Desktop\\Capstone Project\\Coastal Homestay Management System\\CHMS_BE\\CHMS.API\\CHMS.API.csproj",
+        "projectUniqueName": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.API\\CHMS.API.csproj",
         "projectName": "CHMS.API",
-        "projectPath": "C:\\Users\\acer\\Desktop\\Capstone Project\\Coastal Homestay Management System\\CHMS_BE\\CHMS.API\\CHMS.API.csproj",
-        "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\acer\\Desktop\\Capstone Project\\Coastal Homestay Management System\\CHMS_BE\\CHMS.API\\obj\\",
+        "projectPath": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.API\\CHMS.API.csproj",
+        "packagesPath": "C:\\Users\\minhh\\.nuget\\packages\\",
+        "outputPath": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.API\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\minhh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,18 +23,17 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "C:\\Users\\acer\\.nuget\\packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\acer\\Desktop\\Capstone Project\\Coastal Homestay Management System\\CHMS_BE\\CHMS.BLL\\CHMS.BLL.csproj": {
-                "projectPath": "C:\\Users\\acer\\Desktop\\Capstone Project\\Coastal Homestay Management System\\CHMS_BE\\CHMS.BLL\\CHMS.BLL.csproj"
+              "D:\\github\\CHMS_SP26SE073_BE\\CHMS.BLL\\CHMS.BLL.csproj": {
+                "projectPath": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.BLL\\CHMS.BLL.csproj"
               },
-              "C:\\Users\\acer\\Desktop\\Capstone Project\\Coastal Homestay Management System\\CHMS_BE\\CHMS.DAL\\CHMS.DAL.csproj": {
-                "projectPath": "C:\\Users\\acer\\Desktop\\Capstone Project\\Coastal Homestay Management System\\CHMS_BE\\CHMS.DAL\\CHMS.DAL.csproj"
+              "D:\\github\\CHMS_SP26SE073_BE\\CHMS.DAL\\CHMS.DAL.csproj": {
+                "projectPath": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.DAL\\CHMS.DAL.csproj"
               }
             }
           }
@@ -52,13 +47,16 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
+        }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[15.1.0, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -89,25 +87,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\acer\\Desktop\\Capstone Project\\Coastal Homestay Management System\\CHMS_BE\\CHMS.BLL\\CHMS.BLL.csproj": {
+    "D:\\github\\CHMS_SP26SE073_BE\\CHMS.BLL\\CHMS.BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\acer\\Desktop\\Capstone Project\\Coastal Homestay Management System\\CHMS_BE\\CHMS.BLL\\CHMS.BLL.csproj",
+        "projectUniqueName": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.BLL\\CHMS.BLL.csproj",
         "projectName": "CHMS.BLL",
-        "projectPath": "C:\\Users\\acer\\Desktop\\Capstone Project\\Coastal Homestay Management System\\CHMS_BE\\CHMS.BLL\\CHMS.BLL.csproj",
-        "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\acer\\Desktop\\Capstone Project\\Coastal Homestay Management System\\CHMS_BE\\CHMS.BLL\\obj\\",
+        "projectPath": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.BLL\\CHMS.BLL.csproj",
+        "packagesPath": "C:\\Users\\minhh\\.nuget\\packages\\",
+        "outputPath": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.BLL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\minhh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -116,18 +110,17 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "C:\\Users\\acer\\.nuget\\packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\acer\\Desktop\\Capstone Project\\Coastal Homestay Management System\\CHMS_BE\\CHMS.DAL\\CHMS.DAL.csproj": {
-                "projectPath": "C:\\Users\\acer\\Desktop\\Capstone Project\\Coastal Homestay Management System\\CHMS_BE\\CHMS.DAL\\CHMS.DAL.csproj"
+              "D:\\github\\CHMS_SP26SE073_BE\\CHMS.DAL\\CHMS.DAL.csproj": {
+                "projectPath": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.DAL\\CHMS.DAL.csproj"
               },
-              "C:\\Users\\acer\\Desktop\\Capstone Project\\Coastal Homestay Management System\\CHMS_BE\\CHMS.Domain\\CHMS.Domain.csproj": {
-                "projectPath": "C:\\Users\\acer\\Desktop\\Capstone Project\\Coastal Homestay Management System\\CHMS_BE\\CHMS.Domain\\CHMS.Domain.csproj"
+              "D:\\github\\CHMS_SP26SE073_BE\\CHMS.Domain\\CHMS.Domain.csproj": {
+                "projectPath": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.Domain\\CHMS.Domain.csproj"
               }
             }
           }
@@ -141,12 +134,17 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
+        }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[15.1.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -163,25 +161,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\acer\\Desktop\\Capstone Project\\Coastal Homestay Management System\\CHMS_BE\\CHMS.DAL\\CHMS.DAL.csproj": {
+    "D:\\github\\CHMS_SP26SE073_BE\\CHMS.DAL\\CHMS.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\acer\\Desktop\\Capstone Project\\Coastal Homestay Management System\\CHMS_BE\\CHMS.DAL\\CHMS.DAL.csproj",
+        "projectUniqueName": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.DAL\\CHMS.DAL.csproj",
         "projectName": "CHMS.DAL",
-        "projectPath": "C:\\Users\\acer\\Desktop\\Capstone Project\\Coastal Homestay Management System\\CHMS_BE\\CHMS.DAL\\CHMS.DAL.csproj",
-        "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\acer\\Desktop\\Capstone Project\\Coastal Homestay Management System\\CHMS_BE\\CHMS.DAL\\obj\\",
+        "projectPath": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.DAL\\CHMS.DAL.csproj",
+        "packagesPath": "C:\\Users\\minhh\\.nuget\\packages\\",
+        "outputPath": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.DAL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\minhh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -190,15 +184,14 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "C:\\Users\\acer\\.nuget\\packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\acer\\Desktop\\Capstone Project\\Coastal Homestay Management System\\CHMS_BE\\CHMS.Domain\\CHMS.Domain.csproj": {
-                "projectPath": "C:\\Users\\acer\\Desktop\\Capstone Project\\Coastal Homestay Management System\\CHMS_BE\\CHMS.Domain\\CHMS.Domain.csproj"
+              "D:\\github\\CHMS_SP26SE073_BE\\CHMS.Domain\\CHMS.Domain.csproj": {
+                "projectPath": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.Domain\\CHMS.Domain.csproj"
               }
             }
           }
@@ -212,8 +205,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -250,25 +242,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\acer\\Desktop\\Capstone Project\\Coastal Homestay Management System\\CHMS_BE\\CHMS.Domain\\CHMS.Domain.csproj": {
+    "D:\\github\\CHMS_SP26SE073_BE\\CHMS.Domain\\CHMS.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\acer\\Desktop\\Capstone Project\\Coastal Homestay Management System\\CHMS_BE\\CHMS.Domain\\CHMS.Domain.csproj",
+        "projectUniqueName": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.Domain\\CHMS.Domain.csproj",
         "projectName": "CHMS.Domain",
-        "projectPath": "C:\\Users\\acer\\Desktop\\Capstone Project\\Coastal Homestay Management System\\CHMS_BE\\CHMS.Domain\\CHMS.Domain.csproj",
-        "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\acer\\Desktop\\Capstone Project\\Coastal Homestay Management System\\CHMS_BE\\CHMS.Domain\\obj\\",
+        "projectPath": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.Domain\\CHMS.Domain.csproj",
+        "packagesPath": "C:\\Users\\minhh\\.nuget\\packages\\",
+        "outputPath": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\minhh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -277,7 +265,6 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "C:\\Users\\acer\\.nuget\\packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -295,8 +282,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -317,7 +303,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

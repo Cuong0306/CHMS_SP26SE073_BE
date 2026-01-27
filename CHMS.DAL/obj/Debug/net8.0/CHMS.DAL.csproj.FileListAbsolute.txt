@@ -15,3 +15,21 @@ C:\Users\acer\Desktop\Capstone Project\Coastal Homestay Management System\CHMS_B
 C:\Users\acer\Desktop\Capstone Project\Coastal Homestay Management System\CHMS_BE\CHMS.DAL\obj\Debug\net8.0\CHMS.DAL.pdb
 C:\Users\acer\Desktop\Capstone Project\Coastal Homestay Management System\CHMS_BE\CHMS.DAL\obj\Debug\net8.0\CHMS.DAL.genruntimeconfig.cache
 C:\Users\acer\Desktop\Capstone Project\Coastal Homestay Management System\CHMS_BE\CHMS.DAL\obj\Debug\net8.0\ref\CHMS.DAL.dll
+D:\github\CHMS_SP26SE073_BE\CHMS.DAL\bin\Debug\net8.0\CHMS.DAL.deps.json
+D:\github\CHMS_SP26SE073_BE\CHMS.DAL\bin\Debug\net8.0\CHMS.DAL.runtimeconfig.json
+D:\github\CHMS_SP26SE073_BE\CHMS.DAL\bin\Debug\net8.0\CHMS.DAL.dll
+D:\github\CHMS_SP26SE073_BE\CHMS.DAL\bin\Debug\net8.0\CHMS.DAL.pdb
+D:\github\CHMS_SP26SE073_BE\CHMS.DAL\bin\Debug\net8.0\CHMS.Domain.dll
+D:\github\CHMS_SP26SE073_BE\CHMS.DAL\bin\Debug\net8.0\CHMS.Domain.pdb
+D:\github\CHMS_SP26SE073_BE\CHMS.DAL\obj\Debug\net8.0\CHMS.DAL.csproj.AssemblyReference.cache
+D:\github\CHMS_SP26SE073_BE\CHMS.DAL\obj\Debug\net8.0\CHMS.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\github\CHMS_SP26SE073_BE\CHMS.DAL\obj\Debug\net8.0\CHMS.DAL.AssemblyInfoInputs.cache
+D:\github\CHMS_SP26SE073_BE\CHMS.DAL\obj\Debug\net8.0\CHMS.DAL.AssemblyInfo.cs
+D:\github\CHMS_SP26SE073_BE\CHMS.DAL\obj\Debug\net8.0\CHMS.DAL.csproj.CoreCompileInputs.cache
+D:\github\CHMS_SP26SE073_BE\CHMS.DAL\obj\Debug\net8.0\CHMS.DAL.sourcelink.json
+D:\github\CHMS_SP26SE073_BE\CHMS.DAL\obj\Debug\net8.0\CHMS.DAL.csproj.Up2Date
+D:\github\CHMS_SP26SE073_BE\CHMS.DAL\obj\Debug\net8.0\CHMS.DAL.dll
+D:\github\CHMS_SP26SE073_BE\CHMS.DAL\obj\Debug\net8.0\refint\CHMS.DAL.dll
+D:\github\CHMS_SP26SE073_BE\CHMS.DAL\obj\Debug\net8.0\CHMS.DAL.pdb
+D:\github\CHMS_SP26SE073_BE\CHMS.DAL\obj\Debug\net8.0\CHMS.DAL.genruntimeconfig.cache
+D:\github\CHMS_SP26SE073_BE\CHMS.DAL\obj\Debug\net8.0\ref\CHMS.DAL.dll

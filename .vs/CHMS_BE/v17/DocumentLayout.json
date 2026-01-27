@@ -1,46 +1,106 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\acer\\Desktop\\Capstone Project\\Coastal Homestay Management System\\CHMS_BE\\",
+  "WorkspaceRootPath": "D:\\github\\CHMS_SP26SE073_BE\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{46B26A92-2CB8-46E5-9637-9A8457D3F7BC}|CHMS.API\\CHMS.API.csproj|c:\\users\\acer\\desktop\\capstone project\\coastal homestay management system\\chms_be\\chms.api\\middlewares\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46B26A92-2CB8-46E5-9637-9A8457D3F7BC}|CHMS.API\\CHMS.API.csproj|solutionrelative:chms.api\\middlewares\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{511A0264-4086-4A8F-82CC-69EF32A8ACA8}|CHMS.BLL\\CHMS.BLL.csproj|d:\\github\\chms_sp26se073_be\\chms.bll\\mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{511A0264-4086-4A8F-82CC-69EF32A8ACA8}|CHMS.BLL\\CHMS.BLL.csproj|solutionrelative:chms.bll\\mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{511A0264-4086-4A8F-82CC-69EF32A8ACA8}|CHMS.BLL\\CHMS.BLL.csproj|c:\\users\\acer\\desktop\\capstone project\\coastal homestay management system\\chms_be\\chms.bll\\common\\exceptions\\unauthorizedexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{511A0264-4086-4A8F-82CC-69EF32A8ACA8}|CHMS.BLL\\CHMS.BLL.csproj|solutionrelative:chms.bll\\common\\exceptions\\unauthorizedexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{10C22022-248D-053E-37FD-62AF70CD7636}|CHMS.Domain\\CHMS.Domain.csproj|d:\\github\\chms_sp26se073_be\\chms.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10C22022-248D-053E-37FD-62AF70CD7636}|CHMS.Domain\\CHMS.Domain.csproj|solutionrelative:chms.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{511A0264-4086-4A8F-82CC-69EF32A8ACA8}|CHMS.BLL\\CHMS.BLL.csproj|c:\\users\\acer\\desktop\\capstone project\\coastal homestay management system\\chms_be\\chms.bll\\common\\exceptions\\badrequestexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{511A0264-4086-4A8F-82CC-69EF32A8ACA8}|CHMS.BLL\\CHMS.BLL.csproj|solutionrelative:chms.bll\\common\\exceptions\\badrequestexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{511A0264-4086-4A8F-82CC-69EF32A8ACA8}|CHMS.BLL\\CHMS.BLL.csproj|d:\\github\\chms_sp26se073_be\\chms.bll\\dtos\\responses\\userresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{511A0264-4086-4A8F-82CC-69EF32A8ACA8}|CHMS.BLL\\CHMS.BLL.csproj|solutionrelative:chms.bll\\dtos\\responses\\userresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{511A0264-4086-4A8F-82CC-69EF32A8ACA8}|CHMS.BLL\\CHMS.BLL.csproj|c:\\users\\acer\\desktop\\capstone project\\coastal homestay management system\\chms_be\\chms.bll\\common\\exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{511A0264-4086-4A8F-82CC-69EF32A8ACA8}|CHMS.BLL\\CHMS.BLL.csproj|solutionrelative:chms.bll\\common\\exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46B26A92-2CB8-46E5-9637-9A8457D3F7BC}|CHMS.API\\CHMS.API.csproj|c:\\users\\acer\\desktop\\capstone project\\coastal homestay management system\\chms_be\\chms.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{46B26A92-2CB8-46E5-9637-9A8457D3F7BC}|CHMS.API\\CHMS.API.csproj|d:\\github\\chms_sp26se073_be\\chms.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{46B26A92-2CB8-46E5-9637-9A8457D3F7BC}|CHMS.API\\CHMS.API.csproj|solutionrelative:chms.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46B26A92-2CB8-46E5-9637-9A8457D3F7BC}|CHMS.API\\CHMS.API.csproj|c:\\users\\acer\\desktop\\capstone project\\coastal homestay management system\\chms_be\\chms.api\\extensions\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46B26A92-2CB8-46E5-9637-9A8457D3F7BC}|CHMS.API\\CHMS.API.csproj|solutionrelative:chms.api\\extensions\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{10C22022-248D-053E-37FD-62AF70CD7636}|CHMS.Domain\\CHMS.Domain.csproj|d:\\github\\chms_sp26se073_be\\chms.domain\\common\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10C22022-248D-053E-37FD-62AF70CD7636}|CHMS.Domain\\CHMS.Domain.csproj|solutionrelative:chms.domain\\common\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0700BAF3-ED15-4BA7-B201-83D6831D47F5}|CHMS.DAL\\CHMS.DAL.csproj|c:\\users\\acer\\desktop\\capstone project\\coastal homestay management system\\chms_be\\chms.dal\\common\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0700BAF3-ED15-4BA7-B201-83D6831D47F5}|CHMS.DAL\\CHMS.DAL.csproj|d:\\github\\chms_sp26se073_be\\chms.dal\\common\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0700BAF3-ED15-4BA7-B201-83D6831D47F5}|CHMS.DAL\\CHMS.DAL.csproj|solutionrelative:chms.dal\\common\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0700BAF3-ED15-4BA7-B201-83D6831D47F5}|CHMS.DAL\\CHMS.DAL.csproj|c:\\users\\acer\\desktop\\capstone project\\coastal homestay management system\\chms_be\\chms.dal\\common\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0700BAF3-ED15-4BA7-B201-83D6831D47F5}|CHMS.DAL\\CHMS.DAL.csproj|d:\\github\\chms_sp26se073_be\\chms.dal\\common\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0700BAF3-ED15-4BA7-B201-83D6831D47F5}|CHMS.DAL\\CHMS.DAL.csproj|solutionrelative:chms.dal\\common\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0700BAF3-ED15-4BA7-B201-83D6831D47F5}|CHMS.DAL\\CHMS.DAL.csproj|c:\\users\\acer\\desktop\\capstone project\\coastal homestay management system\\chms_be\\chms.dal\\common\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{511A0264-4086-4A8F-82CC-69EF32A8ACA8}|CHMS.BLL\\CHMS.BLL.csproj|d:\\github\\chms_sp26se073_be\\chms.bll\\services\\implementations\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{511A0264-4086-4A8F-82CC-69EF32A8ACA8}|CHMS.BLL\\CHMS.BLL.csproj|solutionrelative:chms.bll\\services\\implementations\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0700BAF3-ED15-4BA7-B201-83D6831D47F5}|CHMS.DAL\\CHMS.DAL.csproj|d:\\github\\chms_sp26se073_be\\chms.dal\\repositories\\implementations\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0700BAF3-ED15-4BA7-B201-83D6831D47F5}|CHMS.DAL\\CHMS.DAL.csproj|solutionrelative:chms.dal\\repositories\\implementations\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0700BAF3-ED15-4BA7-B201-83D6831D47F5}|CHMS.DAL\\CHMS.DAL.csproj|d:\\github\\chms_sp26se073_be\\chms.dal\\repositories\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0700BAF3-ED15-4BA7-B201-83D6831D47F5}|CHMS.DAL\\CHMS.DAL.csproj|solutionrelative:chms.dal\\repositories\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{511A0264-4086-4A8F-82CC-69EF32A8ACA8}|CHMS.BLL\\CHMS.BLL.csproj|d:\\github\\chms_sp26se073_be\\chms.bll\\services\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{511A0264-4086-4A8F-82CC-69EF32A8ACA8}|CHMS.BLL\\CHMS.BLL.csproj|solutionrelative:chms.bll\\services\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0700BAF3-ED15-4BA7-B201-83D6831D47F5}|CHMS.DAL\\CHMS.DAL.csproj|d:\\github\\chms_sp26se073_be\\chms.dal\\common\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0700BAF3-ED15-4BA7-B201-83D6831D47F5}|CHMS.DAL\\CHMS.DAL.csproj|solutionrelative:chms.dal\\common\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0700BAF3-ED15-4BA7-B201-83D6831D47F5}|CHMS.DAL\\CHMS.DAL.csproj|d:\\github\\chms_sp26se073_be\\chms.dal\\common\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0700BAF3-ED15-4BA7-B201-83D6831D47F5}|CHMS.DAL\\CHMS.DAL.csproj|solutionrelative:chms.dal\\common\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0700BAF3-ED15-4BA7-B201-83D6831D47F5}|CHMS.DAL\\CHMS.DAL.csproj|c:\\users\\acer\\desktop\\capstone project\\coastal homestay management system\\chms_be\\chms.dal\\common\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0700BAF3-ED15-4BA7-B201-83D6831D47F5}|CHMS.DAL\\CHMS.DAL.csproj|solutionrelative:chms.dal\\common\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{46B26A92-2CB8-46E5-9637-9A8457D3F7BC}|CHMS.API\\CHMS.API.csproj|d:\\github\\chms_sp26se073_be\\chms.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46B26A92-2CB8-46E5-9637-9A8457D3F7BC}|CHMS.API\\CHMS.API.csproj|solutionrelative:chms.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46B26A92-2CB8-46E5-9637-9A8457D3F7BC}|CHMS.API\\CHMS.API.csproj|d:\\github\\chms_sp26se073_be\\chms.api\\chms.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{46B26A92-2CB8-46E5-9637-9A8457D3F7BC}|CHMS.API\\CHMS.API.csproj|solutionrelative:chms.api\\chms.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{511A0264-4086-4A8F-82CC-69EF32A8ACA8}|CHMS.BLL\\CHMS.BLL.csproj|d:\\github\\chms_sp26se073_be\\chms.bll\\common\\exceptions\\badrequestexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{511A0264-4086-4A8F-82CC-69EF32A8ACA8}|CHMS.BLL\\CHMS.BLL.csproj|solutionrelative:chms.bll\\common\\exceptions\\badrequestexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{511A0264-4086-4A8F-82CC-69EF32A8ACA8}|CHMS.BLL\\CHMS.BLL.csproj|d:\\github\\chms_sp26se073_be\\chms.bll\\common\\exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{511A0264-4086-4A8F-82CC-69EF32A8ACA8}|CHMS.BLL\\CHMS.BLL.csproj|solutionrelative:chms.bll\\common\\exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{511A0264-4086-4A8F-82CC-69EF32A8ACA8}|CHMS.BLL\\CHMS.BLL.csproj|d:\\github\\chms_sp26se073_be\\chms.bll\\common\\exceptions\\unauthorizedexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{511A0264-4086-4A8F-82CC-69EF32A8ACA8}|CHMS.BLL\\CHMS.BLL.csproj|solutionrelative:chms.bll\\common\\exceptions\\unauthorizedexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{511A0264-4086-4A8F-82CC-69EF32A8ACA8}|CHMS.BLL\\CHMS.BLL.csproj|d:\\github\\chms_sp26se073_be\\chms.bll\\common\\helpers\\slughelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{511A0264-4086-4A8F-82CC-69EF32A8ACA8}|CHMS.BLL\\CHMS.BLL.csproj|solutionrelative:chms.bll\\common\\helpers\\slughelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{511A0264-4086-4A8F-82CC-69EF32A8ACA8}|CHMS.BLL\\CHMS.BLL.csproj|d:\\github\\chms_sp26se073_be\\chms.bll\\common\\helpers\\passwordhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{511A0264-4086-4A8F-82CC-69EF32A8ACA8}|CHMS.BLL\\CHMS.BLL.csproj|solutionrelative:chms.bll\\common\\helpers\\passwordhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10C22022-248D-053E-37FD-62AF70CD7636}|CHMS.Domain\\CHMS.Domain.csproj|d:\\github\\chms_sp26se073_be\\chms.domain\\common\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10C22022-248D-053E-37FD-62AF70CD7636}|CHMS.Domain\\CHMS.Domain.csproj|solutionrelative:chms.domain\\common\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{511A0264-4086-4A8F-82CC-69EF32A8ACA8}|CHMS.BLL\\CHMS.BLL.csproj|d:\\github\\chms_sp26se073_be\\chms.bll\\dtos\\requests\\registerrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{511A0264-4086-4A8F-82CC-69EF32A8ACA8}|CHMS.BLL\\CHMS.BLL.csproj|solutionrelative:chms.bll\\dtos\\requests\\registerrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46B26A92-2CB8-46E5-9637-9A8457D3F7BC}|CHMS.API\\CHMS.API.csproj|d:\\github\\chms_sp26se073_be\\chms.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{46B26A92-2CB8-46E5-9637-9A8457D3F7BC}|CHMS.API\\CHMS.API.csproj|solutionrelative:chms.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46B26A92-2CB8-46E5-9637-9A8457D3F7BC}|CHMS.API\\CHMS.API.csproj|d:\\github\\chms_sp26se073_be\\chms.api\\middlewares\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46B26A92-2CB8-46E5-9637-9A8457D3F7BC}|CHMS.API\\CHMS.API.csproj|solutionrelative:chms.api\\middlewares\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46B26A92-2CB8-46E5-9637-9A8457D3F7BC}|CHMS.API\\CHMS.API.csproj|d:\\github\\chms_sp26se073_be\\chms.api\\extensions\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46B26A92-2CB8-46E5-9637-9A8457D3F7BC}|CHMS.API\\CHMS.API.csproj|solutionrelative:chms.api\\extensions\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,32 +110,339 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 33,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:4:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:6:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:7:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:8:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:9:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:10:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1a46fd64-28d5-434c-8eb3-17a02d419b53}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:28:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:22:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:23:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:21:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.Domain\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "CHMS.Domain\\Entities\\User.cs",
+              "ToolTip": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.Domain\\Entities\\User.cs",
+              "RelativeToolTip": "CHMS.Domain\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T14:58:15.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CHMS.API.csproj",
+              "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.API\\CHMS.API.csproj",
+              "RelativeDocumentMoniker": "CHMS.API\\CHMS.API.csproj",
+              "ToolTip": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.API\\CHMS.API.csproj",
+              "RelativeToolTip": "CHMS.API\\CHMS.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-27T14:05:19.57Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "CHMS.API\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "CHMS.API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T13:58:43.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "SlugHelper.cs",
+              "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.BLL\\Common\\Helpers\\SlugHelper.cs",
+              "RelativeDocumentMoniker": "CHMS.BLL\\Common\\Helpers\\SlugHelper.cs",
+              "ToolTip": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.BLL\\Common\\Helpers\\SlugHelper.cs",
+              "RelativeToolTip": "CHMS.BLL\\Common\\Helpers\\SlugHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T13:57:28.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.BLL\\Mappings\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "CHMS.BLL\\Mappings\\MappingProfile.cs",
+              "ToolTip": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.BLL\\Mappings\\MappingProfile.cs",
+              "RelativeToolTip": "CHMS.BLL\\Mappings\\MappingProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T13:36:04.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.DAL\\Repositories\\Implementations\\UserRepository.cs",
+              "RelativeDocumentMoniker": "CHMS.DAL\\Repositories\\Implementations\\UserRepository.cs",
+              "ToolTip": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.DAL\\Repositories\\Implementations\\UserRepository.cs",
+              "RelativeToolTip": "CHMS.DAL\\Repositories\\Implementations\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:43:49.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.DAL\\Repositories\\Interfaces\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "CHMS.DAL\\Repositories\\Interfaces\\IUserRepository.cs",
+              "ToolTip": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.DAL\\Repositories\\Interfaces\\IUserRepository.cs",
+              "RelativeToolTip": "CHMS.DAL\\Repositories\\Interfaces\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:39:14.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApiResponse.cs",
+              "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.Domain\\Common\\ApiResponse.cs",
+              "RelativeDocumentMoniker": "CHMS.Domain\\Common\\ApiResponse.cs",
+              "ToolTip": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.Domain\\Common\\ApiResponse.cs",
+              "RelativeToolTip": "CHMS.Domain\\Common\\ApiResponse.cs",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAowJkAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:29:20.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.Domain\\Common\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "CHMS.Domain\\Common\\BaseEntity.cs",
+              "ToolTip": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.Domain\\Common\\BaseEntity.cs",
+              "RelativeToolTip": "CHMS.Domain\\Common\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:29:13.57Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PasswordHelper.cs",
+              "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.BLL\\Common\\Helpers\\PasswordHelper.cs",
+              "RelativeDocumentMoniker": "CHMS.BLL\\Common\\Helpers\\PasswordHelper.cs",
+              "ToolTip": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.BLL\\Common\\Helpers\\PasswordHelper.cs",
+              "RelativeToolTip": "CHMS.BLL\\Common\\Helpers\\PasswordHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAABeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:15:12.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.BLL\\Services\\Implementations\\AuthService.cs",
+              "RelativeDocumentMoniker": "CHMS.BLL\\Services\\Implementations\\AuthService.cs",
+              "ToolTip": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.BLL\\Services\\Implementations\\AuthService.cs",
+              "RelativeToolTip": "CHMS.BLL\\Services\\Implementations\\AuthService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:10:05.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.BLL\\Services\\Interfaces\\IAuthService.cs",
+              "RelativeDocumentMoniker": "CHMS.BLL\\Services\\Interfaces\\IAuthService.cs",
+              "ToolTip": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.BLL\\Services\\Interfaces\\IAuthService.cs",
+              "RelativeToolTip": "CHMS.BLL\\Services\\Interfaces\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:08:19.123Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserResponseDTO.cs",
+              "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.BLL\\DTOs\\Responses\\UserResponseDTO.cs",
+              "RelativeDocumentMoniker": "CHMS.BLL\\DTOs\\Responses\\UserResponseDTO.cs",
+              "ToolTip": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.BLL\\DTOs\\Responses\\UserResponseDTO.cs",
+              "RelativeToolTip": "CHMS.BLL\\DTOs\\Responses\\UserResponseDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:03:12.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "RegisterRequestDTO.cs",
+              "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.BLL\\DTOs\\Requests\\RegisterRequestDTO.cs",
+              "RelativeDocumentMoniker": "CHMS.BLL\\DTOs\\Requests\\RegisterRequestDTO.cs",
+              "ToolTip": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.BLL\\DTOs\\Requests\\RegisterRequestDTO.cs",
+              "RelativeToolTip": "CHMS.BLL\\DTOs\\Requests\\RegisterRequestDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:02:16.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.API\\appsettings.json",
+              "RelativeDocumentMoniker": "CHMS.API\\appsettings.json",
+              "ToolTip": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.API\\appsettings.json",
+              "RelativeToolTip": "CHMS.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-27T09:48:56.336Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "UnauthorizedException.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\Capstone Project\\Coastal Homestay Management System\\CHMS_BE\\CHMS.BLL\\Common\\Exceptions\\UnauthorizedException.cs",
+              "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.BLL\\Common\\Exceptions\\UnauthorizedException.cs",
               "RelativeDocumentMoniker": "CHMS.BLL\\Common\\Exceptions\\UnauthorizedException.cs",
-              "ToolTip": "C:\\Users\\acer\\Desktop\\Capstone Project\\Coastal Homestay Management System\\CHMS_BE\\CHMS.BLL\\Common\\Exceptions\\UnauthorizedException.cs",
+              "ToolTip": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.BLL\\Common\\Exceptions\\UnauthorizedException.cs",
               "RelativeToolTip": "CHMS.BLL\\Common\\Exceptions\\UnauthorizedException.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-27T04:22:10.784Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 15,
               "Title": "BadRequestException.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\Capstone Project\\Coastal Homestay Management System\\CHMS_BE\\CHMS.BLL\\Common\\Exceptions\\BadRequestException.cs",
+              "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.BLL\\Common\\Exceptions\\BadRequestException.cs",
               "RelativeDocumentMoniker": "CHMS.BLL\\Common\\Exceptions\\BadRequestException.cs",
-              "ToolTip": "C:\\Users\\acer\\Desktop\\Capstone Project\\Coastal Homestay Management System\\CHMS_BE\\CHMS.BLL\\Common\\Exceptions\\BadRequestException.cs",
+              "ToolTip": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.BLL\\Common\\Exceptions\\BadRequestException.cs",
               "RelativeToolTip": "CHMS.BLL\\Common\\Exceptions\\BadRequestException.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -84,11 +451,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 16,
               "Title": "NotFoundException.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\Capstone Project\\Coastal Homestay Management System\\CHMS_BE\\CHMS.BLL\\Common\\Exceptions\\NotFoundException.cs",
+              "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.BLL\\Common\\Exceptions\\NotFoundException.cs",
               "RelativeDocumentMoniker": "CHMS.BLL\\Common\\Exceptions\\NotFoundException.cs",
-              "ToolTip": "C:\\Users\\acer\\Desktop\\Capstone Project\\Coastal Homestay Management System\\CHMS_BE\\CHMS.BLL\\Common\\Exceptions\\NotFoundException.cs",
+              "ToolTip": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.BLL\\Common\\Exceptions\\NotFoundException.cs",
               "RelativeToolTip": "CHMS.BLL\\Common\\Exceptions\\NotFoundException.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -97,24 +464,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\Capstone Project\\Coastal Homestay Management System\\CHMS_BE\\CHMS.API\\Program.cs",
+              "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.API\\Program.cs",
               "RelativeDocumentMoniker": "CHMS.API\\Program.cs",
-              "ToolTip": "C:\\Users\\acer\\Desktop\\Capstone Project\\Coastal Homestay Management System\\CHMS_BE\\CHMS.API\\Program.cs",
+              "ToolTip": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.API\\Program.cs",
               "RelativeToolTip": "CHMS.API\\Program.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAUwE0AAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-27T04:19:11.067Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 24,
               "Title": "ServiceExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\Capstone Project\\Coastal Homestay Management System\\CHMS_BE\\CHMS.API\\Extensions\\ServiceExtensions.cs",
+              "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.API\\Extensions\\ServiceExtensions.cs",
               "RelativeDocumentMoniker": "CHMS.API\\Extensions\\ServiceExtensions.cs",
-              "ToolTip": "C:\\Users\\acer\\Desktop\\Capstone Project\\Coastal Homestay Management System\\CHMS_BE\\CHMS.API\\Extensions\\ServiceExtensions.cs",
+              "ToolTip": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.API\\Extensions\\ServiceExtensions.cs",
               "RelativeToolTip": "CHMS.API\\Extensions\\ServiceExtensions.cs",
               "ViewState": "AgIAAKUAAAAAAAAAAAAUwLYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -123,68 +490,246 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 23,
               "Title": "ExceptionMiddleware.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\Capstone Project\\Coastal Homestay Management System\\CHMS_BE\\CHMS.API\\Middlewares\\ExceptionMiddleware.cs",
+              "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.API\\Middlewares\\ExceptionMiddleware.cs",
               "RelativeDocumentMoniker": "CHMS.API\\Middlewares\\ExceptionMiddleware.cs",
-              "ToolTip": "C:\\Users\\acer\\Desktop\\Capstone Project\\Coastal Homestay Management System\\CHMS_BE\\CHMS.API\\Middlewares\\ExceptionMiddleware.cs",
+              "ToolTip": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.API\\Middlewares\\ExceptionMiddleware.cs",
               "RelativeToolTip": "CHMS.API\\Middlewares\\ExceptionMiddleware.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAwEkAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAuwEkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-27T04:17:52.623Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "UnitOfWork.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\Capstone Project\\Coastal Homestay Management System\\CHMS_BE\\CHMS.DAL\\Common\\UnitOfWork.cs",
+              "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.DAL\\Common\\UnitOfWork.cs",
               "RelativeDocumentMoniker": "CHMS.DAL\\Common\\UnitOfWork.cs",
-              "ToolTip": "C:\\Users\\acer\\Desktop\\Capstone Project\\Coastal Homestay Management System\\CHMS_BE\\CHMS.DAL\\Common\\UnitOfWork.cs",
+              "ToolTip": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.DAL\\Common\\UnitOfWork.cs",
               "RelativeToolTip": "CHMS.DAL\\Common\\UnitOfWork.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-27T04:14:55.939Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "IUnitOfWork.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\Capstone Project\\Coastal Homestay Management System\\CHMS_BE\\CHMS.DAL\\Common\\IUnitOfWork.cs",
+              "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.DAL\\Common\\IUnitOfWork.cs",
               "RelativeDocumentMoniker": "CHMS.DAL\\Common\\IUnitOfWork.cs",
-              "ToolTip": "C:\\Users\\acer\\Desktop\\Capstone Project\\Coastal Homestay Management System\\CHMS_BE\\CHMS.DAL\\Common\\IUnitOfWork.cs",
+              "ToolTip": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.DAL\\Common\\IUnitOfWork.cs",
               "RelativeToolTip": "CHMS.DAL\\Common\\IUnitOfWork.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-27T04:14:38.684Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "GenericRepository.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\Capstone Project\\Coastal Homestay Management System\\CHMS_BE\\CHMS.DAL\\Common\\GenericRepository.cs",
+              "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.DAL\\Common\\GenericRepository.cs",
               "RelativeDocumentMoniker": "CHMS.DAL\\Common\\GenericRepository.cs",
-              "ToolTip": "C:\\Users\\acer\\Desktop\\Capstone Project\\Coastal Homestay Management System\\CHMS_BE\\CHMS.DAL\\Common\\GenericRepository.cs",
+              "ToolTip": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.DAL\\Common\\GenericRepository.cs",
               "RelativeToolTip": "CHMS.DAL\\Common\\GenericRepository.cs",
-              "ViewState": "AgIAALkAAAAAAAAAAAAUwMoAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAiwKIAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-27T04:14:29.166Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "IGenericRepository.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\Capstone Project\\Coastal Homestay Management System\\CHMS_BE\\CHMS.DAL\\Common\\IGenericRepository.cs",
+              "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.DAL\\Common\\IGenericRepository.cs",
               "RelativeDocumentMoniker": "CHMS.DAL\\Common\\IGenericRepository.cs",
-              "ToolTip": "C:\\Users\\acer\\Desktop\\Capstone Project\\Coastal Homestay Management System\\CHMS_BE\\CHMS.DAL\\Common\\IGenericRepository.cs",
+              "ToolTip": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.DAL\\Common\\IGenericRepository.cs",
               "RelativeToolTip": "CHMS.DAL\\Common\\IGenericRepository.cs",
-              "ViewState": "AgIAAGcAAAAAAAAAAAAUwIEAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAIwHEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-27T04:14:10.583Z",
               "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:31:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:35:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:8:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:17:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:20:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:25:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:26:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:27:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:32:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:33:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:34:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:36:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:39:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:43:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:37:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:44:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:47:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:51:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:55:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:53:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:57:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:58:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:62:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:45:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:9:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 9,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{f2e84780-2af1-11d1-a7fa-00a0c9110051}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{4a18f9d0-b838-11d0-93eb-00a0c90f2734}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{90243340-bd7a-11d0-93ef-00a0c90f2734}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0504ff91-9d61-11d0-a794-00a0c9110051}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:11:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 826,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:21:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:28:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             }
           ]
         }

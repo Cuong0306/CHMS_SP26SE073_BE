@@ -2,6 +2,9 @@
 
 namespace CHMS.DAL.Common;
 
+using CHMS.DAL.Entities;
+using CHMS.DAL.Repositories.Interfaces;
+
 /// <summary>
 /// Interface cho Unit of Work pattern
 /// Quản lý tất cả repositories và đảm bảo save changes trong 1 transaction
@@ -11,12 +14,13 @@ public interface IUnitOfWork : IDisposable
     #region Repositories
 
     // Thêm các repository interface ở đây khi tạo
-    // IUserRepository Users { get; }
+    IUserRepository Users { get; }
     // IHomestayRepository Homestays { get; }
     // IBookingRepository Bookings { get; }
     // IReviewRepository Reviews { get; }
     // IPaymentRepository Payments { get; }
     // ... các repositories khác
+    IGenericRepository<UserRole> UserRoles { get; }
 
     #endregion
 

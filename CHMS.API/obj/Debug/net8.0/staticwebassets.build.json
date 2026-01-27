@@ -1,1 +1,11 @@
-{"Version":1,"Hash":"PJYjN2L0K+wSIRAtQTPesa8csX11961v8VqYLd4GniM=","Source":"CHMS.API","BasePath":"_content/CHMS.API","Mode":"Default","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}
+{
+  "Version": 1,
+  "Hash": "zxQaeQ/l0fT1fxF5Hk/4ztL0GgjoGE9t9dCJistpxsU=",
+  "Source": "CHMS.API",
+  "BasePath": "_content/CHMS.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
