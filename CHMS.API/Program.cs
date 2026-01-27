@@ -1,0 +1,84 @@
+﻿using CHMS.API.Extensions;
+using CHMS.API.Middlewares;
+using CHMS.DAL.Data;
+using Microsoft.EntityFrameworkCore;
+
+var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+
+//================================
+// Add DbContext
+builder.Services.AddDbContext<CoastalHomestayDBContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+//================================
+
+// ========== SERVICES ==========
+
+// Database
+builder.Services.AddDatabase(builder.Configuration);
+
+// Repositories
+builder.Services.AddRepositories();
+
+// Services (BLL)
+builder.Services.AddServices();
+
+// Third Party Services
+builder.Services.AddThirdPartyServices(builder.Configuration);
+
+// AutoMapper
+builder.Services.AddAutoMapperProfiles();
+
+// CORS
+builder.Services.AddCorsPolicy(builder.Configuration);
+
+// Controllers
+builder.Services.AddControllers();
+
+// Swagger
+builder.Services.AddSwaggerDocumentation();
+
+// SignalR
+builder.Services.AddSignalRHubs();
+
+builder.Services.AddControllers();
+// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+var app = builder.Build();
+
+// ========== MIDDLEWARE PIPELINE ==========
+
+// Exception handling (đặt đầu tiên để bắt tất cả exceptions)
+app.UseExceptionMiddleware();
+
+// Swagger (chỉ trong Development)
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI(options =>
+    {
+        options.SwaggerEndpoint("/swagger/v1/swagger.json", "Coastal Homestay API v1");
+        options.RoutePrefix = "swagger";
+    });
+}
+
+// Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
+app.UseHttpsRedirection();
+
+// CORS
+app.UseCors("AllowAll");
+
+app.UseAuthorization();
+
+app.MapControllers();
+
+app.Run();

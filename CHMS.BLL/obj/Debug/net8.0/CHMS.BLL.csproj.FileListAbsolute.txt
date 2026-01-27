@@ -1,0 +1,17 @@
+C:\Users\acer\Desktop\Capstone Project\Coastal Homestay Management System\CHMS_BE\CHMS.BLL\bin\Debug\net8.0\CHMS.BLL.deps.json
+C:\Users\acer\Desktop\Capstone Project\Coastal Homestay Management System\CHMS_BE\CHMS.BLL\bin\Debug\net8.0\CHMS.BLL.dll
+C:\Users\acer\Desktop\Capstone Project\Coastal Homestay Management System\CHMS_BE\CHMS.BLL\bin\Debug\net8.0\CHMS.BLL.pdb
+C:\Users\acer\Desktop\Capstone Project\Coastal Homestay Management System\CHMS_BE\CHMS.BLL\bin\Debug\net8.0\CHMS.DAL.dll
+C:\Users\acer\Desktop\Capstone Project\Coastal Homestay Management System\CHMS_BE\CHMS.BLL\bin\Debug\net8.0\CHMS.Domain.dll
+C:\Users\acer\Desktop\Capstone Project\Coastal Homestay Management System\CHMS_BE\CHMS.BLL\bin\Debug\net8.0\CHMS.DAL.pdb
+C:\Users\acer\Desktop\Capstone Project\Coastal Homestay Management System\CHMS_BE\CHMS.BLL\bin\Debug\net8.0\CHMS.Domain.pdb
+C:\Users\acer\Desktop\Capstone Project\Coastal Homestay Management System\CHMS_BE\CHMS.BLL\obj\Debug\net8.0\CHMS.BLL.csproj.AssemblyReference.cache
+C:\Users\acer\Desktop\Capstone Project\Coastal Homestay Management System\CHMS_BE\CHMS.BLL\obj\Debug\net8.0\CHMS.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\acer\Desktop\Capstone Project\Coastal Homestay Management System\CHMS_BE\CHMS.BLL\obj\Debug\net8.0\CHMS.BLL.AssemblyInfoInputs.cache
+C:\Users\acer\Desktop\Capstone Project\Coastal Homestay Management System\CHMS_BE\CHMS.BLL\obj\Debug\net8.0\CHMS.BLL.AssemblyInfo.cs
+C:\Users\acer\Desktop\Capstone Project\Coastal Homestay Management System\CHMS_BE\CHMS.BLL\obj\Debug\net8.0\CHMS.BLL.csproj.CoreCompileInputs.cache
+C:\Users\acer\Desktop\Capstone Project\Coastal Homestay Management System\CHMS_BE\CHMS.BLL\obj\Debug\net8.0\CHMS.BLL.csproj.Up2Date
+C:\Users\acer\Desktop\Capstone Project\Coastal Homestay Management System\CHMS_BE\CHMS.BLL\obj\Debug\net8.0\CHMS.BLL.dll
+C:\Users\acer\Desktop\Capstone Project\Coastal Homestay Management System\CHMS_BE\CHMS.BLL\obj\Debug\net8.0\refint\CHMS.BLL.dll
+C:\Users\acer\Desktop\Capstone Project\Coastal Homestay Management System\CHMS_BE\CHMS.BLL\obj\Debug\net8.0\CHMS.BLL.pdb
+C:\Users\acer\Desktop\Capstone Project\Coastal Homestay Management System\CHMS_BE\CHMS.BLL\obj\Debug\net8.0\ref\CHMS.BLL.dll
