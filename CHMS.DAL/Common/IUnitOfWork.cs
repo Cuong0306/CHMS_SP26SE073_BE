@@ -22,6 +22,8 @@ public interface IUnitOfWork : IDisposable
     // ... các repositories khác
     IGenericRepository<UserRole> UserRoles { get; }
 
+    IGenericRepository<Role> Roles { get; }
+
     #endregion
 
     #region Methods

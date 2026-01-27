@@ -28,6 +28,7 @@ public class UnitOfWork : IUnitOfWork
     // private IBookingRepository? _bookingRepository;
 
     private IGenericRepository<UserRole>? _userRoleRepository;
+    private IGenericRepository<Role>? _roleRepository;
 
     public IUserRepository Users => _userRepository ??= new UserRepository(_context);
     // public IHomestayRepository Homestays => _homestayRepository ??= new HomestayRepository(_context);
@@ -35,6 +36,9 @@ public class UnitOfWork : IUnitOfWork
 
     public IGenericRepository<UserRole> UserRoles =>
         _userRoleRepository ??= new GenericRepository<UserRole>(_context);
+
+    public IGenericRepository<Role> Roles =>
+    _roleRepository ??= new GenericRepository<Role>(_context);
 
     #endregion
 

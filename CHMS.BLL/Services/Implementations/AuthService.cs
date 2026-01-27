@@ -25,63 +25,66 @@ namespace CHMS.BLL.Services.Implementations
         public async Task<UserResponseDTO> RegisterAsync(RegisterRequestDTO dto)
         {
             // 1. Check Email trùng
-            // Lưu ý: FindAsync trả về IEnumerable, nên dùng FirstOrDefault() để check
-            var existingUsers = await _unitOfWork.Users.GetAsync(u => u.Email == dto.Email);
             var existingUser = await _unitOfWork.Users.GetAsync(u => u.Email == dto.Email);
-
             if (existingUser != null)
             {
                 throw new Exception("Email đã tồn tại!");
             }
 
-            // 2. Map DTO sang Entity User
+            // 2. Map DTO sang User
             var user = _mapper.Map<User>(dto);
 
-            // Tự tạo Guid mới
+            // Config các thông tin User
             user.Id = Guid.NewGuid();
             user.PasswordHash = PasswordHelper.Hash(dto.Password);
             user.CreatedAt = DateTime.UtcNow;
-            user.IsDeleted = false;
             user.Status = "Active";
+            user.IsDeleted = false;
 
-            // 3. Bắt đầu Transaction
-            await _unitOfWork.BeginTransactionAsync();
+            // 3. Tìm Role Customer
+            // Lưu ý: Dùng AsNoTracking() nếu có thể để tối ưu, nhưng GetAsync thường đã xử lý rồi
+            var customerRole = await _unitOfWork.Roles.GetAsync(r => r.Name == "Customer");
+            if (customerRole == null) throw new Exception("Lỗi: Không tìm thấy quyền Customer");
+
+            // =========================================================================
+            // 🔥 KHẮC PHỤC LỖI TẠI ĐÂY: DÙNG NAVIGATION COLLECTION
+            // Thay vì lưu User trước -> Rồi mới tạo UserRole -> Rồi lưu UserRole
+            // Ta nhét thẳng UserRole vào trong danh sách của User luôn.
+            // Entity Framework sẽ tự lo việc: Lưu User -> Lấy ID User -> Gán vào UserRole -> Lưu UserRole
+            // =========================================================================
+
+            var userRole = new UserRole
+            {
+                // Không cần gán UserId thủ công nữa, EF tự điền
+                RoleId = customerRole.Id,
+                AssignedAt = DateTime.UtcNow // Nhớ dòng này kẻo lỗi DateTime
+            };
+
+            // Thêm vào danh sách UserRoles của chính user đó
+            user.UserRoles.Add(userRole);
+
             try
             {
-                // --- BƯỚC A: LƯU USER ---
+                await _unitOfWork.BeginTransactionAsync();
+
+                // 4. CHỈ CẦN LƯU USER LÀ ĐỦ (Nó sẽ tự lưu cả Role đi kèm)
                 await _unitOfWork.Users.AddAsync(user);
                 await _unitOfWork.SaveChangesAsync();
 
-                // --- BƯỚC B: TẠO USER ROLE ---
-                // Guid của Role Customer (Lấy từ SQL)
-                Guid customerRoleId = Guid.Parse("9D8A6512-B3E0-4235-8679-055270146970");
-
-                var userRole = new UserRole
-                {
-                    // Nếu bảng UserRoles có cột Id là PK riêng thì cần tạo Guid mới
-                    // Id = Guid.NewGuid(), 
-                    UserId = user.Id,
-                    RoleId = customerRoleId
-                };
-
-                // SỬA LỖI Ở ĐÂY: Gọi thông qua property UserRoles đã khai báo trong UnitOfWork
-                await _unitOfWork.UserRoles.AddAsync(userRole);
-
-                await _unitOfWork.SaveChangesAsync();
-
-                // Cam kết Transaction
                 await _unitOfWork.CommitTransactionAsync();
             }
             catch (Exception ex)
             {
                 await _unitOfWork.RollbackTransactionAsync();
-                throw new Exception("Lỗi khi tạo tài khoản: " + ex.Message);
+                // Lấy lỗi gốc để dễ debug
+                var msg = ex.InnerException != null ? ex.InnerException.Message : ex.Message;
+                throw new Exception("Lỗi Database: " + msg);
             }
 
-            // 4. Trả về kết quả
+            // 5. Trả kết quả
             var response = _mapper.Map<UserResponseDTO>(user);
             response.RoleName = "Customer";
             return response;
         }
     }
-}
+    }

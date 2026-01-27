@@ -150,14 +150,6 @@ C:\Users\acer\Desktop\Capstone Project\Coastal Homestay Management System\CHMS_B
 C:\Users\acer\Desktop\Capstone Project\Coastal Homestay Management System\CHMS_BE\CHMS.API\obj\Debug\net8.0\CHMS.API.pdb
 C:\Users\acer\Desktop\Capstone Project\Coastal Homestay Management System\CHMS_BE\CHMS.API\obj\Debug\net8.0\CHMS.API.genruntimeconfig.cache
 C:\Users\acer\Desktop\Capstone Project\Coastal Homestay Management System\CHMS_BE\CHMS.API\obj\Debug\net8.0\ref\CHMS.API.dll
-D:\github\CHMS_SP26SE073_BE\CHMS.API\obj\Debug\net8.0\CHMS.API.csproj.AssemblyReference.cache
-D:\github\CHMS_SP26SE073_BE\CHMS.API\obj\Debug\net8.0\CHMS.API.GeneratedMSBuildEditorConfig.editorconfig
-D:\github\CHMS_SP26SE073_BE\CHMS.API\obj\Debug\net8.0\CHMS.API.AssemblyInfoInputs.cache
-D:\github\CHMS_SP26SE073_BE\CHMS.API\obj\Debug\net8.0\CHMS.API.AssemblyInfo.cs
-D:\github\CHMS_SP26SE073_BE\CHMS.API\obj\Debug\net8.0\CHMS.API.csproj.CoreCompileInputs.cache
-D:\github\CHMS_SP26SE073_BE\CHMS.API\obj\Debug\net8.0\CHMS.API.MvcApplicationPartsAssemblyInfo.cs
-D:\github\CHMS_SP26SE073_BE\CHMS.API\obj\Debug\net8.0\CHMS.API.MvcApplicationPartsAssemblyInfo.cache
-D:\github\CHMS_SP26SE073_BE\CHMS.API\obj\Debug\net8.0\CHMS.API.sourcelink.json
 D:\github\CHMS_SP26SE073_BE\CHMS.API\bin\Debug\net8.0\appsettings.Development.json
 D:\github\CHMS_SP26SE073_BE\CHMS.API\bin\Debug\net8.0\appsettings.json
 D:\github\CHMS_SP26SE073_BE\CHMS.API\bin\Debug\net8.0\CHMS.API.exe
@@ -288,6 +280,14 @@ D:\github\CHMS_SP26SE073_BE\CHMS.API\bin\Debug\net8.0\CHMS.Domain.dll
 D:\github\CHMS_SP26SE073_BE\CHMS.API\bin\Debug\net8.0\CHMS.BLL.pdb
 D:\github\CHMS_SP26SE073_BE\CHMS.API\bin\Debug\net8.0\CHMS.DAL.pdb
 D:\github\CHMS_SP26SE073_BE\CHMS.API\bin\Debug\net8.0\CHMS.Domain.pdb
+D:\github\CHMS_SP26SE073_BE\CHMS.API\obj\Debug\net8.0\CHMS.API.csproj.AssemblyReference.cache
+D:\github\CHMS_SP26SE073_BE\CHMS.API\obj\Debug\net8.0\CHMS.API.GeneratedMSBuildEditorConfig.editorconfig
+D:\github\CHMS_SP26SE073_BE\CHMS.API\obj\Debug\net8.0\CHMS.API.AssemblyInfoInputs.cache
+D:\github\CHMS_SP26SE073_BE\CHMS.API\obj\Debug\net8.0\CHMS.API.AssemblyInfo.cs
+D:\github\CHMS_SP26SE073_BE\CHMS.API\obj\Debug\net8.0\CHMS.API.csproj.CoreCompileInputs.cache
+D:\github\CHMS_SP26SE073_BE\CHMS.API\obj\Debug\net8.0\CHMS.API.MvcApplicationPartsAssemblyInfo.cs
+D:\github\CHMS_SP26SE073_BE\CHMS.API\obj\Debug\net8.0\CHMS.API.MvcApplicationPartsAssemblyInfo.cache
+D:\github\CHMS_SP26SE073_BE\CHMS.API\obj\Debug\net8.0\CHMS.API.sourcelink.json
 D:\github\CHMS_SP26SE073_BE\CHMS.API\obj\Debug\net8.0\staticwebassets.build.json
 D:\github\CHMS_SP26SE073_BE\CHMS.API\obj\Debug\net8.0\staticwebassets.development.json
 D:\github\CHMS_SP26SE073_BE\CHMS.API\obj\Debug\net8.0\staticwebassets\msbuild.CHMS.API.Microsoft.AspNetCore.StaticWebAssets.props
