@@ -72,6 +72,27 @@ namespace CHMS.API.Controllers
                 return BadRequest(ApiResponse<object>.ErrorResult(ex.Message));
             }
         }
+        [HttpPost("forgot-password")]
+        public async Task<IActionResult> ForgotPassword([FromBody] ForgotPasswordRequestDTO request)
+        {
+            try
+            {
+                await _authService.ForgotPasswordAsync(request.Email);
+                return Ok(ApiResponse<object>.SuccessResult(null, "Mã xác nhận đã được gửi vào email của bạn."));
+            }
+            catch (Exception ex) { return BadRequest(ApiResponse<object>.ErrorResult(ex.Message)); }
+        }
+
+        [HttpPost("reset-password")]
+        public async Task<IActionResult> ResetPassword([FromBody] ResetPasswordRequestDTO request)
+        {
+            try
+            {
+                await _authService.ResetPasswordAsync(request);
+                return Ok(ApiResponse<object>.SuccessResult(null, "Đổi mật khẩu thành công. Vui lòng đăng nhập lại."));
+            }
+            catch (Exception ex) { return BadRequest(ApiResponse<object>.ErrorResult(ex.Message)); }
+        }
 
     }
 }

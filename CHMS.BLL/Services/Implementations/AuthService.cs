@@ -275,5 +275,51 @@ namespace CHMS.BLL.Services.Implementations
                 Role = roleName
             };
         }
+
+        public async Task<bool> ForgotPasswordAsync(string email)
+        {
+            var user = await _unitOfWork.Users.GetAsync(u => u.Email == email);
+            if (user == null) throw new Exception("Email không tồn tại trong hệ thống.");
+
+            // Sinh mã OTP 6 số
+            var otpCode = new Random().Next(100000, 999999).ToString();
+
+            // Lưu vào RAM (Key khác với key đăng ký nhé, đặt là RESET_OTP_)
+            // Hết hạn sau 15 phút
+            _cache.Set($"RESET_OTP_{email}", otpCode, TimeSpan.FromMinutes(15));
+
+            // Gửi mail
+            await _emailService.SendEmailAsync(email, "Yêu cầu đặt lại mật khẩu",
+                $"<h3>Mã xác nhận của bạn là: <b style='color:red'>{otpCode}</b></h3><p>Mã này có hiệu lực 15 phút.</p>");
+
+            return true;
+        }
+
+        public async Task<bool> ResetPasswordAsync(ResetPasswordRequestDTO dto)
+        {
+            // Check OTP trong RAM
+            if (!_cache.TryGetValue($"RESET_OTP_{dto.Email}", out string? storedOtp))
+            {
+                throw new Exception("Mã OTP đã hết hạn hoặc không đúng.");
+            }
+
+            if (storedOtp != dto.OtpCode) throw new Exception("Mã OTP không chính xác.");
+
+            // Lấy user ra để đổi pass
+            var user = await _unitOfWork.Users.GetAsync(u => u.Email == dto.Email);
+            if (user == null) throw new Exception("Lỗi hệ thống: User không tìm thấy.");
+
+            // Hash mật khẩu mới
+            user.PasswordHash = PasswordHelper.Hash(dto.NewPassword);
+
+            _unitOfWork.Users.Update(user);
+            await _unitOfWork.SaveChangesAsync();
+            await _unitOfWork.CommitTransactionAsync(); // Nếu cần
+
+            // Xóa OTP cho sạch
+            _cache.Remove($"RESET_OTP_{dto.Email}");
+
+            return true;
+        }
     }
     }

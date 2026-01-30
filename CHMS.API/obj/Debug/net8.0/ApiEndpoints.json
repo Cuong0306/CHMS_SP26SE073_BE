@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "CHMS.API.Controllers.AuthController",
+    "Method": "ForgotPassword",
+    "RelativePath": "api/Auth/forgot-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CHMS.BLL.DTOs.Requests.ForgotPasswordRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CHMS.API.Controllers.AuthController",
     "Method": "GoogleLogin",
     "RelativePath": "api/Auth/google-login",
     "HttpMethod": "POST",
@@ -42,6 +58,22 @@
       {
         "Name": "request",
         "Type": "CHMS.BLL.DTOs.Requests.RegisterRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CHMS.API.Controllers.AuthController",
+    "Method": "ResetPassword",
+    "RelativePath": "api/Auth/reset-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CHMS.BLL.DTOs.Requests.ResetPasswordRequestDTO",
         "IsRequired": true
       }
     ],

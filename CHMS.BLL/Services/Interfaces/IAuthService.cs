@@ -17,5 +17,9 @@ namespace CHMS.BLL.Services.Interfaces
         public Task<LoginResponseDTO> LoginAsync(LoginRequestDTO dto);
 
         public Task<LoginResponseDTO> GoogleLoginAsync(GoogleLoginRequestDTO dto);
+
+        public Task<bool> ForgotPasswordAsync(string email);
+
+        public Task<bool> ResetPasswordAsync(ResetPasswordRequestDTO dto);
     }
 }
