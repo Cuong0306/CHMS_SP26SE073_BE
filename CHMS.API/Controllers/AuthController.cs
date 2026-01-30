@@ -94,5 +94,22 @@ namespace CHMS.API.Controllers
             catch (Exception ex) { return BadRequest(ApiResponse<object>.ErrorResult(ex.Message)); }
         }
 
+        [HttpPost("refresh-token")]
+        public async Task<IActionResult> RefreshToken([FromBody] TokenRequestDTO request)
+        {
+            try
+            {
+                // Gọi Service để xử lý xoay vòng token
+                var result = await _authService.RefreshTokenAsync(request);
+
+                return Ok(ApiResponse<LoginResponseDTO>.SuccessResult(result, "Làm mới token thành công!"));
+            }
+            catch (Exception ex)
+            {
+                // Trả về lỗi 400 nếu token không hợp lệ hoặc hết hạn
+                return BadRequest(ApiResponse<object>.ErrorResult(ex.Message));
+            }
+        }
+
     }
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CHMS.DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c951c8a42fd79bd5ebfa7f798caf02479f9ceeeb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8e3756431396690fdffa770b54a57a735ced6038")]
 [assembly: System.Reflection.AssemblyProductAttribute("CHMS.DAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CHMS.DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

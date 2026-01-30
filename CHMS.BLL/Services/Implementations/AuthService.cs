@@ -65,11 +65,31 @@ namespace CHMS.BLL.Services.Implementations
             }
 
             // 5. Tạo JWT Token
-            var token = GenerateJwtToken(user, roleName);
+            var accessToken = GenerateJwtToken(user, roleName);
+
+            // 2. Tạo Refresh Token Entity
+            var refreshTokenStr = GenerateRandomString(35); // Hàm random chuỗi
+
+            var refreshTokenEntity = new RefreshToken
+            {
+                Id = Guid.NewGuid(),
+                UserId = user.Id,
+                Token = refreshTokenStr,
+                CreatedAt = DateTime.UtcNow,
+                ExpiresAt = DateTime.UtcNow.AddDays(7), // Hết hạn sau 7 ngày
+                RevokedAt = null,                       // Chưa bị thu hồi
+                ReplacedByToken = null,                 // Chưa bị thay thế
+                DeviceInfo = "Unknown"                  // Tạm thời để Unknown, sau này bạn lấy từ Header User-Agent
+            };
+
+            // 3. Lưu vào DB
+            await _unitOfWork.RefreshTokens.AddAsync(refreshTokenEntity);
+            await _unitOfWork.SaveChangesAsync();
 
             return new LoginResponseDTO
             {
-                AccessToken = token,
+                AccessToken = accessToken,
+                RefreshToken = refreshTokenStr,
                 Email = user.Email,
                 FullName = user.FullName,
                 Role = roleName
@@ -102,6 +122,14 @@ namespace CHMS.BLL.Services.Implementations
             );
 
             return new JwtSecurityTokenHandler().WriteToken(token);
+        }
+
+        private string GenerateRandomString(int length)
+        {
+            var random = new Random();
+            var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+            return new string(Enumerable.Repeat(chars, length)
+                .Select(s => s[random.Next(s.Length)]).ToArray());
         }
 
 
@@ -320,6 +348,86 @@ namespace CHMS.BLL.Services.Implementations
             _cache.Remove($"RESET_OTP_{dto.Email}");
 
             return true;
+        }
+
+       
+        public async Task<LoginResponseDTO> RefreshTokenAsync(TokenRequestDTO dto)
+        {
+            // 1. Tìm token trong DB
+            var storedToken = await _unitOfWork.RefreshTokens.GetAsync(x => x.Token == dto.RefreshToken);
+
+            if (storedToken == null)
+            {
+                throw new Exception("Refresh Token không tồn tại.");
+            }
+
+            // 2. Kiểm tra tính hợp lệ
+            // A. Đã bị thu hồi chưa?
+            if (storedToken.RevokedAt != null)
+            {
+                // Kịch bản bảo mật: Nếu token đã bị thu hồi mà vẫn cố dùng -> Có thể token bị trộm
+                // Ở đây mình chặn lại. (Nâng cao: Có thể thu hồi luôn tất cả token của user này để an toàn)
+                throw new Exception("Token này đã bị thu hồi (Revoked).");
+            }
+
+            // B. Đã hết hạn chưa?
+            if (storedToken.ExpiresAt < DateTime.UtcNow)
+            {
+                throw new Exception("Token đã hết hạn. Vui lòng đăng nhập lại.");
+            }
+
+            // C. Đã được sử dụng để đổi cái mới chưa? (ReplacedByToken)
+            if (!string.IsNullOrEmpty(storedToken.ReplacedByToken))
+            {
+                throw new Exception("Token này đã được sử dụng. Vui lòng đăng nhập lại.");
+            }
+
+            // 3. XỬ LÝ XOAY VÒNG (Token Rotation)
+            var user = await _unitOfWork.Users.GetAsync(u => u.Id == storedToken.UserId);
+            if (user == null) throw new Exception("User không tồn tại.");
+
+            // Tạo Access Token mới
+            // Lưu ý: Lấy lại role cũ hoặc query lại DB để lấy role mới nhất
+            var userRole = await _unitOfWork.UserRoles.GetAsync(ur => ur.UserId == user.Id);
+            var roleName = "Customer"; // Logic lấy tên role của bạn
+            if (userRole != null)
+            {
+                var role = await _unitOfWork.Roles.GetByIdAsync(userRole.RoleId);
+                roleName = role?.Name ?? "Customer";
+            }
+
+            var newAccessToken = GenerateJwtToken(user, roleName);
+            var newRefreshTokenStr = GenerateRandomString(35);
+
+            // 4. Cập nhật Token CŨ (Đánh dấu là đã dùng và bị thay thế)
+            storedToken.RevokedAt = DateTime.UtcNow;
+            storedToken.ReplacedByToken = newRefreshTokenStr;
+            _unitOfWork.RefreshTokens.Update(storedToken);
+
+            // 5. Tạo Token MỚI
+            var newRefreshTokenEntity = new RefreshToken
+            {
+                Id = Guid.NewGuid(),
+                UserId = user.Id,
+                Token = newRefreshTokenStr,
+                CreatedAt = DateTime.UtcNow,
+                ExpiresAt = DateTime.UtcNow.AddDays(7),
+                RevokedAt = null,
+                ReplacedByToken = null,
+                DeviceInfo = storedToken.DeviceInfo // Giữ nguyên thông tin thiết bị cũ
+            };
+
+            await _unitOfWork.RefreshTokens.AddAsync(newRefreshTokenEntity);
+            await _unitOfWork.SaveChangesAsync();
+
+            return new LoginResponseDTO
+            {
+                AccessToken = newAccessToken,
+                RefreshToken = newRefreshTokenStr,
+                Email = user.Email,
+                FullName = user.FullName,
+                Role = roleName
+            };
         }
     }
     }

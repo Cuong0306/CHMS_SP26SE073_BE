@@ -527,14 +527,17 @@ public class CoastalHomestayDBContext : DbContext
     private void UpdateTimestamps()
     {
         var entries = ChangeTracker.Entries()
-            .Where(e => e.State == EntityState.Modified);
+            .Where(e => e.State == EntityState.Modified); // Chỉ lấy các dòng đang sửa
 
         foreach (var entry in entries)
         {
-            var updatedAtProperty = entry.Property("UpdatedAt");
-            if (updatedAtProperty != null)
+            // 👇 SỬA DÒNG NÀY: Dùng Metadata.FindProperty để kiểm tra an toàn
+            var hasUpdatedAt = entry.Metadata.FindProperty("UpdatedAt");
+
+            if (hasUpdatedAt != null)
             {
-                updatedAtProperty.CurrentValue = DateTime.Now;
+                // Nếu có cột UpdatedAt thì mới gán giá trị
+                entry.Property("UpdatedAt").CurrentValue = DateTime.UtcNow;
             }
         }
     }

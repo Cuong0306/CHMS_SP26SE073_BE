@@ -21,5 +21,7 @@ namespace CHMS.BLL.Services.Interfaces
         public Task<bool> ForgotPasswordAsync(string email);
 
         public Task<bool> ResetPasswordAsync(ResetPasswordRequestDTO dto);
+
+        public Task<LoginResponseDTO> RefreshTokenAsync(TokenRequestDTO dto);
     }
 }

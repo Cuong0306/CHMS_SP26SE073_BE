@@ -24,6 +24,8 @@ public interface IUnitOfWork : IDisposable
 
     IGenericRepository<Role> Roles { get; }
 
+    IGenericRepository<RefreshToken> RefreshTokens { get; }
+
     #endregion
 
     #region Methods

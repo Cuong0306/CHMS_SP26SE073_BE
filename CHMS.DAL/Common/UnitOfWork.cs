@@ -40,6 +40,11 @@ public class UnitOfWork : IUnitOfWork
     public IGenericRepository<Role> Roles =>
     _roleRepository ??= new GenericRepository<Role>(_context);
 
+    private IGenericRepository<RefreshToken>? _refreshTokenRepository;
+
+    public IGenericRepository<RefreshToken> RefreshTokens =>
+        _refreshTokenRepository ??= new GenericRepository<RefreshToken>(_context);
+
     #endregion
 
     #region Methods
