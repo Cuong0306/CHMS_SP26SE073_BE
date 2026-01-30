@@ -59,5 +59,19 @@ namespace CHMS.API.Controllers
             }
         }
 
+        [HttpPost("google-login")]
+        public async Task<IActionResult> GoogleLogin([FromBody] GoogleLoginRequestDTO request)
+        {
+            try
+            {
+                var result = await _authService.GoogleLoginAsync(request);
+                return Ok(ApiResponse<LoginResponseDTO>.SuccessResult(result, "Đăng nhập Google thành công!"));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ApiResponse<object>.ErrorResult(ex.Message));
+            }
+        }
+
     }
 }

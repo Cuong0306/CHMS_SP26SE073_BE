@@ -19,6 +19,10 @@
       "RelativeMoniker": "D:0:0:{511A0264-4086-4A8F-82CC-69EF32A8ACA8}|CHMS.BLL\\CHMS.BLL.csproj|solutionrelative:chms.bll\\services\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{511A0264-4086-4A8F-82CC-69EF32A8ACA8}|CHMS.BLL\\CHMS.BLL.csproj|d:\\github\\chms_sp26se073_be\\chms.bll\\dtos\\requests\\googleloginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{511A0264-4086-4A8F-82CC-69EF32A8ACA8}|CHMS.BLL\\CHMS.BLL.csproj|solutionrelative:chms.bll\\dtos\\requests\\googleloginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{511A0264-4086-4A8F-82CC-69EF32A8ACA8}|CHMS.BLL\\CHMS.BLL.csproj|d:\\github\\chms_sp26se073_be\\chms.bll\\dtos\\responses\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{511A0264-4086-4A8F-82CC-69EF32A8ACA8}|CHMS.BLL\\CHMS.BLL.csproj|solutionrelative:chms.bll\\dtos\\responses\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -130,7 +134,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 166,
-          "SelectedChildIndex": 48,
+          "SelectedChildIndex": 49,
           "Children": [
             {
               "$type": "Bookmark",
@@ -251,6 +255,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "GoogleLoginRequestDTO.cs",
+              "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.BLL\\DTOs\\Requests\\GoogleLoginRequestDTO.cs",
+              "RelativeDocumentMoniker": "CHMS.BLL\\DTOs\\Requests\\GoogleLoginRequestDTO.cs",
+              "ToolTip": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.BLL\\DTOs\\Requests\\GoogleLoginRequestDTO.cs",
+              "RelativeToolTip": "CHMS.BLL\\DTOs\\Requests\\GoogleLoginRequestDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-30T04:20:44.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "LoginResponseDTO.cs",
               "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.BLL\\DTOs\\Responses\\LoginResponseDTO.cs",
               "RelativeDocumentMoniker": "CHMS.BLL\\DTOs\\Responses\\LoginResponseDTO.cs",
@@ -263,7 +280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "LoginRequestDTO.cs",
               "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.BLL\\DTOs\\Requests\\LoginRequestDTO.cs",
               "RelativeDocumentMoniker": "CHMS.BLL\\DTOs\\Requests\\LoginRequestDTO.cs",
@@ -276,7 +293,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "EmailService.cs",
               "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.BLL\\Services\\Implementations\\EmailService.cs",
               "RelativeDocumentMoniker": "CHMS.BLL\\Services\\Implementations\\EmailService.cs",
@@ -289,7 +306,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "VerifyOtpRequestDTO.cs",
               "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.BLL\\DTOs\\Requests\\VerifyOtpRequestDTO.cs",
               "RelativeDocumentMoniker": "CHMS.BLL\\DTOs\\Requests\\VerifyOtpRequestDTO.cs",
@@ -302,7 +319,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "UserRole.cs",
               "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.Domain\\Entities\\UserRole.cs",
               "RelativeDocumentMoniker": "CHMS.Domain\\Entities\\UserRole.cs",
@@ -315,7 +332,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.Domain\\Entities\\User.cs",
               "RelativeDocumentMoniker": "CHMS.Domain\\Entities\\User.cs",
@@ -328,7 +345,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "CHMS.API.csproj",
               "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.API\\CHMS.API.csproj",
               "RelativeDocumentMoniker": "CHMS.API\\CHMS.API.csproj",
@@ -347,14 +364,14 @@
               "RelativeDocumentMoniker": "CHMS.API\\Controllers\\AuthController.cs",
               "ToolTip": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.API\\Controllers\\AuthController.cs",
               "RelativeToolTip": "CHMS.API\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAYwDsAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAswEEAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-27T13:58:43.744Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "SlugHelper.cs",
               "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.BLL\\Common\\Helpers\\SlugHelper.cs",
               "RelativeDocumentMoniker": "CHMS.BLL\\Common\\Helpers\\SlugHelper.cs",
@@ -367,7 +384,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "MappingProfile.cs",
               "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.BLL\\Mappings\\MappingProfile.cs",
               "RelativeDocumentMoniker": "CHMS.BLL\\Mappings\\MappingProfile.cs",
@@ -380,7 +397,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.DAL\\Repositories\\Implementations\\UserRepository.cs",
               "RelativeDocumentMoniker": "CHMS.DAL\\Repositories\\Implementations\\UserRepository.cs",
@@ -393,7 +410,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "IUserRepository.cs",
               "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.DAL\\Repositories\\Interfaces\\IUserRepository.cs",
               "RelativeDocumentMoniker": "CHMS.DAL\\Repositories\\Interfaces\\IUserRepository.cs",
@@ -406,7 +423,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "ApiResponse.cs",
               "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.Domain\\Common\\ApiResponse.cs",
               "RelativeDocumentMoniker": "CHMS.Domain\\Common\\ApiResponse.cs",
@@ -419,7 +436,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "BaseEntity.cs",
               "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.Domain\\Common\\BaseEntity.cs",
               "RelativeDocumentMoniker": "CHMS.Domain\\Common\\BaseEntity.cs",
@@ -432,7 +449,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "PasswordHelper.cs",
               "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.BLL\\Common\\Helpers\\PasswordHelper.cs",
               "RelativeDocumentMoniker": "CHMS.BLL\\Common\\Helpers\\PasswordHelper.cs",
@@ -451,7 +468,7 @@
               "RelativeDocumentMoniker": "CHMS.BLL\\Services\\Implementations\\AuthService.cs",
               "ToolTip": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.BLL\\Services\\Implementations\\AuthService.cs",
               "RelativeToolTip": "CHMS.BLL\\Services\\Implementations\\AuthService.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAYwE0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAMYAAAAAAAAAAADwv/wAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-27T10:10:05.302Z",
               "EditorCaption": ""
@@ -471,7 +488,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "UserResponseDTO.cs",
               "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.BLL\\DTOs\\Responses\\UserResponseDTO.cs",
               "RelativeDocumentMoniker": "CHMS.BLL\\DTOs\\Responses\\UserResponseDTO.cs",
@@ -484,7 +501,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "RegisterRequestDTO.cs",
               "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.BLL\\DTOs\\Requests\\RegisterRequestDTO.cs",
               "RelativeDocumentMoniker": "CHMS.BLL\\DTOs\\Requests\\RegisterRequestDTO.cs",
@@ -503,14 +520,14 @@
               "RelativeDocumentMoniker": "CHMS.API\\appsettings.json",
               "ToolTip": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.API\\appsettings.json",
               "RelativeToolTip": "CHMS.API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2026-01-27T09:48:56.336Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "UnauthorizedException.cs",
               "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.BLL\\Common\\Exceptions\\UnauthorizedException.cs",
               "RelativeDocumentMoniker": "CHMS.BLL\\Common\\Exceptions\\UnauthorizedException.cs",
@@ -523,7 +540,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "BadRequestException.cs",
               "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.BLL\\Common\\Exceptions\\BadRequestException.cs",
               "RelativeDocumentMoniker": "CHMS.BLL\\Common\\Exceptions\\BadRequestException.cs",
@@ -536,7 +553,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "NotFoundException.cs",
               "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.BLL\\Common\\Exceptions\\NotFoundException.cs",
               "RelativeDocumentMoniker": "CHMS.BLL\\Common\\Exceptions\\NotFoundException.cs",
@@ -549,20 +566,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.API\\Program.cs",
               "RelativeDocumentMoniker": "CHMS.API\\Program.cs",
               "ToolTip": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.API\\Program.cs",
               "RelativeToolTip": "CHMS.API\\Program.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAAHUAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAIBJwHUAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-27T04:19:11.067Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "ServiceExtensions.cs",
               "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.API\\Extensions\\ServiceExtensions.cs",
               "RelativeDocumentMoniker": "CHMS.API\\Extensions\\ServiceExtensions.cs",
@@ -575,7 +592,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "ExceptionMiddleware.cs",
               "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.API\\Middlewares\\ExceptionMiddleware.cs",
               "RelativeDocumentMoniker": "CHMS.API\\Middlewares\\ExceptionMiddleware.cs",
@@ -588,20 +605,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "UnitOfWork.cs",
               "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.DAL\\Common\\UnitOfWork.cs",
               "RelativeDocumentMoniker": "CHMS.DAL\\Common\\UnitOfWork.cs",
               "ToolTip": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.DAL\\Common\\UnitOfWork.cs",
               "RelativeToolTip": "CHMS.DAL\\Common\\UnitOfWork.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAIBJwCgAAAA+AAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBZwCgAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-27T04:14:55.939Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "IUnitOfWork.cs",
               "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.DAL\\Common\\IUnitOfWork.cs",
               "RelativeDocumentMoniker": "CHMS.DAL\\Common\\IUnitOfWork.cs",
@@ -614,7 +631,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "GenericRepository.cs",
               "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.DAL\\Common\\GenericRepository.cs",
               "RelativeDocumentMoniker": "CHMS.DAL\\Common\\GenericRepository.cs",
@@ -627,7 +644,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "IGenericRepository.cs",
               "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.DAL\\Common\\IGenericRepository.cs",
               "RelativeDocumentMoniker": "CHMS.DAL\\Common\\IGenericRepository.cs",

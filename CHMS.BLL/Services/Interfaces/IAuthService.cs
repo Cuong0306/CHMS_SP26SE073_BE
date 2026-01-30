@@ -15,5 +15,7 @@ namespace CHMS.BLL.Services.Interfaces
         Task<bool> VerifyOtpAsync(string email, string inputOtp);
 
         public Task<LoginResponseDTO> LoginAsync(LoginRequestDTO dto);
+
+        public Task<LoginResponseDTO> GoogleLoginAsync(GoogleLoginRequestDTO dto);
     }
 }

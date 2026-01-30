@@ -14,6 +14,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using Google.Apis.Auth;
 
 namespace CHMS.BLL.Services.Implementations
 {
@@ -194,6 +195,85 @@ namespace CHMS.BLL.Services.Implementations
             _cache.Remove(cacheKey);
 
             return true;
+        }
+
+        public async Task<LoginResponseDTO> GoogleLoginAsync(GoogleLoginRequestDTO dto)
+        {
+            // 1. Xác thực Token với Google (Bước quan trọng nhất)
+            GoogleJsonWebSignature.Payload payload;
+            try
+            {
+                var settings = new GoogleJsonWebSignature.ValidationSettings
+                {
+                    Audience = new[] { _configuration["Authentication:Google:ClientId"] } // Check đúng ClientId của mình
+                };
+                payload = await GoogleJsonWebSignature.ValidateAsync(dto.IdToken, settings);
+            }
+            catch
+            {
+                throw new Exception("Token Google không hợp lệ hoặc đã hết hạn.");
+            }
+
+            // 2. Kiểm tra xem Email này đã có trong DB chưa
+            var user = await _unitOfWork.Users.GetAsync(u => u.Email == payload.Email);
+            var roleName = "Customer";
+
+            if (user == null)
+            {
+                // === TRƯỜNG HỢP 1: CHƯA CÓ -> TỰ ĐỘNG ĐĂNG KÝ ===
+                user = new User
+                {
+                    Id = Guid.NewGuid(),
+                    Email = payload.Email,
+                    FullName = payload.Name, // Lấy tên từ Google
+
+                    // Vì login Google nên không có pass, ta set random hoặc chuỗi rỗng
+                    // Lưu ý: Logic Login thường phải check nếu PasswordHash null thì chặn login bằng pass
+                    PasswordHash = "GOOGLE_AUTH_NO_PASSWORD",
+
+                    Status = "Active", // Google đã xác thực rồi nên Active luôn
+                    IsDeleted = false,
+                    CreatedAt = DateTime.UtcNow
+                };
+
+                // Tìm Role Customer
+                var customerRole = await _unitOfWork.Roles.GetAsync(r => r.Name == "Customer");
+
+                // Thêm UserRoles
+                user.UserRoles.Add(new UserRole
+                {
+                    RoleId = customerRole.Id,
+                    AssignedAt = DateTime.UtcNow
+                });
+
+                // Lưu vào DB
+                await _unitOfWork.Users.AddAsync(user);
+                await _unitOfWork.SaveChangesAsync();
+            }
+            else
+            {
+                // === TRƯỜNG HỢP 2: ĐÃ CÓ -> CHECK TRẠNG THÁI ===
+                if (user.IsDeleted) throw new Exception("Tài khoản đã bị khóa.");
+
+                // Lấy Role hiện tại để tạo Token
+                var userRole = await _unitOfWork.UserRoles.GetAsync(ur => ur.UserId == user.Id);
+                if (userRole != null)
+                {
+                    var role = await _unitOfWork.Roles.GetByIdAsync(userRole.RoleId);
+                    if (role != null) roleName = role.Name;
+                }
+            }
+
+            // 3. Tạo JWT Token (Dùng lại hàm cũ của bạn)
+            var accessToken = GenerateJwtToken(user, roleName);
+
+            return new LoginResponseDTO
+            {
+                AccessToken = accessToken,
+                Email = user.Email,
+                FullName = user.FullName,
+                Role = roleName
+            };
         }
     }
     }
