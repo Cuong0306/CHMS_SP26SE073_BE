@@ -43,5 +43,21 @@ namespace CHMS.API.Controllers
                 return BadRequest(ApiResponse.ErrorResult(ex.Message));
             }
         }
+
+        [HttpPost("login")]
+        public async Task<IActionResult> Login([FromBody] LoginRequestDTO request)
+        {
+            try
+            {
+                var result = await _authService.LoginAsync(request);
+                return Ok(ApiResponse<LoginResponseDTO>.SuccessResult(result, "Đăng nhập thành công!"));
+            }
+            catch (Exception ex)
+            {
+                // Trả về lỗi 401 (Unauthorized) hoặc 400 tùy bạn
+                return BadRequest(ApiResponse<object>.ErrorResult(ex.Message));
+            }
+        }
+
     }
 }

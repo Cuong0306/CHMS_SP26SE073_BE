@@ -13,5 +13,7 @@ namespace CHMS.BLL.Services.Interfaces
         Task<UserResponseDTO> RegisterAsync(RegisterRequestDTO registerDto);
 
         Task<bool> VerifyOtpAsync(string email, string inputOtp);
+
+        public Task<LoginResponseDTO> LoginAsync(LoginRequestDTO dto);
     }
 }

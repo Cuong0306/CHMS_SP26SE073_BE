@@ -310,3 +310,4 @@ D:\github\CHMS_SP26SE073_BE\CHMS.API\bin\Debug\net8.0\MimeKit.dll
 D:\github\CHMS_SP26SE073_BE\CHMS.API\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
 D:\github\CHMS_SP26SE073_BE\CHMS.API\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
 D:\github\CHMS_SP26SE073_BE\CHMS.API\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+D:\github\CHMS_SP26SE073_BE\CHMS.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
