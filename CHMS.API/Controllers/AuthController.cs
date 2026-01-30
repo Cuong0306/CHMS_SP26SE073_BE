@@ -111,5 +111,27 @@ namespace CHMS.API.Controllers
             }
         }
 
+        [HttpPost("logout")]
+        public async Task<IActionResult> Logout([FromBody] TokenRequestDTO request)
+        {
+            try
+            {
+                // Kiểm tra đầu vào
+                if (string.IsNullOrEmpty(request.RefreshToken))
+                {
+                    return BadRequest(ApiResponse<object>.ErrorResult("Refresh Token không được để trống."));
+                }
+
+                // Gọi service để hủy token
+                await _authService.LogoutAsync(request.RefreshToken);
+
+                return Ok(ApiResponse<object>.SuccessResult(null, "Đăng xuất thành công!"));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ApiResponse<object>.ErrorResult(ex.Message));
+            }
+        }
+
     }
 }

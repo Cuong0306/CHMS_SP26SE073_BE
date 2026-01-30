@@ -429,5 +429,24 @@ namespace CHMS.BLL.Services.Implementations
                 Role = roleName
             };
         }
+
+        public async Task<bool> LogoutAsync(string refreshToken)
+        {
+            // 1. Tìm Refresh Token trong DB
+            var storedToken = await _unitOfWork.RefreshTokens.GetAsync(x => x.Token == refreshToken);
+
+            // Nếu không tìm thấy (hoặc đã bị xóa rồi) thì coi như thành công luôn
+            if (storedToken == null) return true;
+
+            // 2. Đánh dấu là đã thu hồi (Revoke)
+            // Lưu ý: Không cần xóa khỏi DB để còn lưu vết lịch sử đăng nhập
+            storedToken.RevokedAt = DateTime.UtcNow;
+
+            // 3. Cập nhật
+            _unitOfWork.RefreshTokens.Update(storedToken);
+            await _unitOfWork.SaveChangesAsync();
+
+            return true;
+        }
     }
     }
