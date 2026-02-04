@@ -53,5 +53,20 @@ namespace CHMS.API.Controllers
             }
         }
 
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Update(Guid id, [FromBody] UpdateHomestayRequestDTO request)
+        {
+            try
+            {
+                await _homestayService.UpdateHomestayAsync(id, request);
+                return Ok(ApiResponse<object>.SuccessResult(null, "Cập nhật homestay thành công!"));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ApiResponse<object>.ErrorResult(ex.Message));
+            }
+        }
+
+
     }
 }
