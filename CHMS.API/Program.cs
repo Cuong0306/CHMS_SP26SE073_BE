@@ -23,6 +23,7 @@ builder.Services.AddDbContext<CoastalHomestayDBContext>(options =>
 // ========== SERVICES ==========
 
 builder.Services.AddScoped<IAuthService, CHMS.BLL.Services.Implementations.AuthService>();
+builder.Services.AddScoped<IHomestayService, HomestayService>();
 builder.Services.AddScoped<CHMS.DAL.Common.IUnitOfWork, CHMS.DAL.Common.UnitOfWork>();
 builder.Services.AddAutoMapper(cfg =>
 {

@@ -1,5 +1,7 @@
 ﻿using CHMS.BLL.DTOs.Requests;
+using CHMS.BLL.DTOs.Requests.Homestay;
 using CHMS.BLL.DTOs.Responses;
+using CHMS.BLL.DTOs.Responses.Homestay;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,5 +27,7 @@ namespace CHMS.BLL.Services.Interfaces
         public Task<LoginResponseDTO> RefreshTokenAsync(TokenRequestDTO dto);
 
         Task<bool> LogoutAsync(string refreshToken);
+
+       
     }
 }

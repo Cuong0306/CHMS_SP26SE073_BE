@@ -4,6 +4,7 @@ namespace CHMS.DAL.Common;
 
 using CHMS.DAL.Entities;
 using CHMS.DAL.Repositories.Interfaces;
+using CHMS.Domain.Entities;
 
 /// <summary>
 /// Interface cho Unit of Work pattern
@@ -20,6 +21,12 @@ public interface IUnitOfWork : IDisposable
     // IReviewRepository Reviews { get; }
     // IPaymentRepository Payments { get; }
     // ... các repositories khác
+
+    IGenericRepository<Homestay> Homestays { get; }
+    IGenericRepository<Location> Locations { get; }
+    IGenericRepository<HomestayImage> HomestayImages { get; }
+    IGenericRepository<Amenity> Amenities { get; }
+    IGenericRepository<HomestayAmenity> HomestayAmenities { get; }
     IGenericRepository<UserRole> UserRoles { get; }
 
     IGenericRepository<Role> Roles { get; }

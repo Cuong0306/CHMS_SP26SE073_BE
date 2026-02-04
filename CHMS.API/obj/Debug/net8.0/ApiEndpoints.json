@@ -1,5 +1,15 @@
 [
   {
+    "ContainingType": "CHMS.API.Controllers.AdminHomestayController",
+    "Method": "GetAll",
+    "RelativePath": "api/admin/homestays",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "CHMS.API.Controllers.AuthController",
     "Method": "ForgotPassword",
     "RelativePath": "api/Auth/forgot-password",

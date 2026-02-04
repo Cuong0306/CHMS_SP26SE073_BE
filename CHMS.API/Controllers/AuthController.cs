@@ -3,6 +3,8 @@ using CHMS.Domain.Common;
 using CHMS.BLL.DTOs.Requests;
 using CHMS.BLL.DTOs.Responses;
 using CHMS.BLL.Services.Interfaces;
+using CHMS.BLL.DTOs.Requests.Homestay;
+using CHMS.BLL.DTOs.Responses.Homestay;
 
 namespace CHMS.API.Controllers
 {

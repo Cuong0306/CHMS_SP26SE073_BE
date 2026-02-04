@@ -15,6 +15,10 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using Google.Apis.Auth;
+using CHMS.BLL.DTOs.Responses.Homestay;
+using CHMS.BLL.DTOs.Requests.Homestay;
+using CHMS.Domain.Entities;
+
 
 namespace CHMS.BLL.Services.Implementations
 {
@@ -448,5 +452,7 @@ namespace CHMS.BLL.Services.Implementations
 
             return true;
         }
+
+       
     }
     }

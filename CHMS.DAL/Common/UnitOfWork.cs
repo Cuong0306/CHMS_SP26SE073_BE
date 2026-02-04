@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore.Storage;
 using CHMS.DAL.Repositories.Implementations;
 using CHMS.DAL.Repositories.Interfaces;
 using CHMS.DAL.Entities;
+using CHMS.Domain.Entities;
 
 namespace CHMS.DAL.Common;
 
@@ -29,6 +30,11 @@ public class UnitOfWork : IUnitOfWork
 
     private IGenericRepository<UserRole>? _userRoleRepository;
     private IGenericRepository<Role>? _roleRepository;
+    private IGenericRepository<Homestay>? _homestayRepository;
+    private IGenericRepository<Location>? _locationRepository;
+    private IGenericRepository<HomestayImage>? _homestayImageRepository;
+    private IGenericRepository<Amenity>? _amenityRepository;
+    private IGenericRepository<HomestayAmenity>? _homestayAmenityRepository;
 
     public IUserRepository Users => _userRepository ??= new UserRepository(_context);
     // public IHomestayRepository Homestays => _homestayRepository ??= new HomestayRepository(_context);
@@ -44,6 +50,23 @@ public class UnitOfWork : IUnitOfWork
 
     public IGenericRepository<RefreshToken> RefreshTokens =>
         _refreshTokenRepository ??= new GenericRepository<RefreshToken>(_context);
+
+    public IGenericRepository<Homestay> Homestays =>
+        _homestayRepository ??= new GenericRepository<Homestay>(_context);
+
+    public IGenericRepository<Location> Locations =>
+        _locationRepository ??= new GenericRepository<Location>(_context);
+
+    public IGenericRepository<HomestayImage> HomestayImages =>
+        _homestayImageRepository ??= new GenericRepository<HomestayImage>(_context);
+
+    public IGenericRepository<Amenity> Amenities =>
+        _amenityRepository ??= new GenericRepository<Amenity>(_context);
+
+    public IGenericRepository<HomestayAmenity> HomestayAmenities =>
+        _homestayAmenityRepository ??= new GenericRepository<HomestayAmenity>(_context);
+
+
 
     #endregion
 

@@ -1,0 +1,32 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using CHMS.BLL.DTOs.Requests.Homestay;  // <--- Namespace Request mới
+using CHMS.BLL.DTOs.Responses.Homestay;
+using CHMS.BLL.Services.Interfaces;
+using CHMS.Domain.Common;
+using CHMS.BLL.DTOs.Responses;
+using Microsoft.AspNetCore.Authorization;
+
+
+namespace CHMS.API.Controllers
+{
+    [Route("api/admin/homestays")]
+    [ApiController]
+    //[Authorize(Roles = "Admin")]
+    public class AdminHomestayController : Controller
+    {
+        private readonly IHomestayService _homestayService;
+
+        public AdminHomestayController(IHomestayService homestayService)
+        {
+            _homestayService = homestayService;
+        }
+
+        // 1. GET: Lấy danh sách tất cả homestay
+        [HttpGet]
+        public async Task<IActionResult> GetAll()
+        {
+            var result = await _homestayService.GetAllHomestaysAsync();
+            return Ok(ApiResponse<IEnumerable<HomestayResponseDTO>>.SuccessResult(result));
+        }
+    }
+}
