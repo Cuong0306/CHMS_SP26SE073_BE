@@ -28,5 +28,17 @@ namespace CHMS.API.Controllers
             var result = await _homestayService.GetAllHomestaysAsync();
             return Ok(ApiResponse<IEnumerable<HomestayResponseDTO>>.SuccessResult(result));
         }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById(Guid id)
+        {
+            var result = await _homestayService.GetHomestayByIdAsync(id);
+
+            if (result == null)
+                return NotFound(ApiResponse<object>.ErrorResult("Không tìm thấy homestay."));
+
+            return Ok(ApiResponse<HomestayResponseDTO>.SuccessResult(result));
+        }
+
     }
 }
