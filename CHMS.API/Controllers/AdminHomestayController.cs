@@ -39,6 +39,19 @@ namespace CHMS.API.Controllers
 
             return Ok(ApiResponse<HomestayResponseDTO>.SuccessResult(result));
         }
+        [HttpPost]
+        public async Task<IActionResult> Create([FromBody] CreateHomestayRequestDTO request)
+        {
+            try
+            {
+                await _homestayService.CreateHomestayAsync(request);
+                return Ok(ApiResponse<object>.SuccessResult(null, "Tạo Homestay thành công!"));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ApiResponse<object>.ErrorResult(ex.Message));
+            }
+        }
 
     }
 }

@@ -11,6 +11,22 @@
   },
   {
     "ContainingType": "CHMS.API.Controllers.AdminHomestayController",
+    "Method": "Create",
+    "RelativePath": "api/admin/homestays",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CHMS.BLL.DTOs.Requests.Homestay.CreateHomestayRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CHMS.API.Controllers.AdminHomestayController",
     "Method": "GetById",
     "RelativePath": "api/admin/homestays/{id}",
     "HttpMethod": "GET",
