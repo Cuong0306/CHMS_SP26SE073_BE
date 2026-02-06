@@ -55,5 +55,20 @@ namespace CHMS.API.Controllers
                 return BadRequest(ApiResponse<object>.ErrorResult(ex.Message));
             }
         }
+
+        [HttpDelete("api/admin/amenities/{id}")]
+        //[Authorize(Roles = "Admin")]
+        public async Task<IActionResult> Delete(Guid id)
+        {
+            try
+            {
+                await _amenityService.DeleteAmenityAsync(id);
+                return Ok(ApiResponse<object>.SuccessResult(null, "Xóa thành công."));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ApiResponse<object>.ErrorResult(ex.Message));
+            }
+        }
     }
 }
