@@ -65,5 +65,19 @@ namespace CHMS.API.Controllers
                 return BadRequest(ApiResponse<object>.ErrorResult(ex.Message));
             }
         }
+        [HttpPost("{id}/cancel")]
+        public async Task<IActionResult> Cancel(Guid id)
+        {
+            try
+            {
+                var userId = GetUserId();
+                await _bookingService.CancelBookingAsync(id, userId);
+                return Ok(ApiResponse<object>.SuccessResult(null, "Đã hủy đơn đặt phòng thành công."));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ApiResponse<object>.ErrorResult(ex.Message));
+            }
+        }
     }
 }
