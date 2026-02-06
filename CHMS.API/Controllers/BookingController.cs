@@ -91,5 +91,19 @@ namespace CHMS.API.Controllers
 
             return Ok(ApiResponse<object>.SuccessResult(result));
         }
+        [HttpPut("{id}/modify")]
+        public async Task<IActionResult> Modify(Guid id, [FromBody] BookingRequestDTO request)
+        {
+            try
+            {
+                var userId = GetUserId();
+                await _bookingService.ModifyBookingAsync(id, userId, request);
+                return Ok(ApiResponse<object>.SuccessResult(null, "Cập nhật booking thành công!"));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ApiResponse<object>.ErrorResult(ex.Message));
+            }
+        }
     }
 }
