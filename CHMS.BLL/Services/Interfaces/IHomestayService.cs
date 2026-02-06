@@ -23,5 +23,8 @@ namespace CHMS.BLL.Services.Interfaces
         public Task DeleteHomestayAsync(Guid id);
 
         Task UpdateHomestayAmenitiesAsync(Guid homestayId, List<Guid> amenityIds);
+
+        Task AddHomestayImageAsync(Guid homestayId, string imageUrl);
+        Task DeleteHomestayImageAsync(Guid photoId);
     }
 }

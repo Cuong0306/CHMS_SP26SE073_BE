@@ -15,10 +15,12 @@ namespace CHMS.API.Controllers
     public class AdminHomestayController : Controller
     {
         private readonly IHomestayService _homestayService;
+        private readonly IPhotoService _photoService;
 
-        public AdminHomestayController(IHomestayService homestayService)
+        public AdminHomestayController(IHomestayService homestayService, IPhotoService photoService)
         {
             _homestayService = homestayService;
+            _photoService = photoService;
         }
 
         // 1. GET: Lấy danh sách tất cả homestay
@@ -107,6 +109,29 @@ namespace CHMS.API.Controllers
                 return BadRequest(ApiResponse<object>.ErrorResult(ex.Message));
             }
         }
+
+        [HttpPost("{id}/photos")]
+        public async Task<IActionResult> UploadPhoto(Guid id, IFormFile file)
+        {
+            // Kiểm tra homestay tồn tại
+            var homestay = await _homestayService.GetHomestayByIdAsync(id);
+            if (homestay == null) return NotFound(ApiResponse<object>.ErrorResult("Homestay not found"));
+
+            // Upload lên Cloudinary
+            var imageUrl = await _photoService.UploadPhotoAsync(file);
+            if (string.IsNullOrEmpty(imageUrl))
+                return BadRequest(ApiResponse<object>.ErrorResult("Upload failed"));
+
+            // Lưu vào Database (Bảng HomestayImages)
+            // Lưu ý: Cần thêm logic lưu vào bảng HomestayImages thông qua Service.
+            // Ở đây mình gọi tắt, bạn nên viết hàm AddImageAsync trong HomestayService nhé.
+
+            // Ví dụ gọi service (Bạn cần thêm hàm này vào IHomestayService):
+            await _homestayService.AddHomestayImageAsync(id, imageUrl);
+
+            return Ok(ApiResponse<string>.SuccessResult(imageUrl, "Upload thành công!"));
+        }
+
 
     }
 }

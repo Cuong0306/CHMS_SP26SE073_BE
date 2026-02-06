@@ -20,6 +20,21 @@ namespace CHMS.BLL.Services.Implementations
         {
             _unitOfWork = unitOfWork;
         }
+
+        public async Task AddHomestayImageAsync(Guid homestayId, string imageUrl)
+        {
+            var img = new CHMS.DAL.Entities.HomestayImage
+            {
+                Id = Guid.NewGuid(),
+                HomestayId = homestayId,
+                ImageUrl = imageUrl,
+                IsPrimary = false, // Mặc định false
+                CreatedAt = DateTime.UtcNow
+            };
+            await _unitOfWork.HomestayImages.AddAsync(img);
+            await _unitOfWork.SaveChangesAsync();
+        }
+
         public async Task<bool> CreateHomestayAsync(CreateHomestayRequestDTO dto)
         {
             await _unitOfWork.BeginTransactionAsync();
@@ -95,9 +110,28 @@ namespace CHMS.BLL.Services.Implementations
             }
         }
 
-        public Task DeleteHomestayAsync(Guid id)
+        public async Task DeleteHomestayAsync(Guid id)
         {
-            throw new NotImplementedException();
+            var homestay = await _unitOfWork.Homestays.GetByIdAsync(id);
+
+            if (homestay == null)
+                throw new Exception("Homestay không tìm thấy để xóa.");
+
+            await _unitOfWork.Homestays.SoftDeleteAsync(id);
+
+            // Lưu thay đổi vào DB
+            await _unitOfWork.SaveChangesAsync();
+        }
+
+        public async Task DeleteHomestayImageAsync(Guid photoId)
+        {
+            // Ở đây ta xóa cứng (Hard Delete) ảnh luôn vì ảnh rác không cần giữ
+            var img = await _unitOfWork.HomestayImages.GetByIdAsync(photoId);
+            if (img != null)
+            {
+                _unitOfWork.HomestayImages.Delete(img);
+                await _unitOfWork.SaveChangesAsync();
+            }
         }
 
         public async Task<IEnumerable<HomestayResponseDTO>> GetAllHomestaysAsync()

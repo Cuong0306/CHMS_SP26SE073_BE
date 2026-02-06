@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CHMS.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+761669b225ea1ede499c10869dce9c108d5e4f70")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+69d7174c5c9485799e8a4e7e9c51f7270cbbed5c")]
 [assembly: System.Reflection.AssemblyProductAttribute("CHMS.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CHMS.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
