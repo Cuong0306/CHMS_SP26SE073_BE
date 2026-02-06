@@ -208,6 +208,30 @@ namespace CHMS.BLL.Services.Implementations
             };
         }
 
+        public async Task<IEnumerable<HomestayResponseDTO>> GetHomestaysByOwnerIdAsync(Guid ownerId)
+        {
+            // Chỉ lấy những homestay có OwnerId trùng khớp
+            var homestays = await _unitOfWork.Homestays.GetAllAsync(h => h.OwnerId == ownerId);
+
+            // Map sang DTO (để code gọn mình dùng lại logic map cũ, thực tế nên dùng AutoMapper)
+            return homestays.Select(h => new HomestayResponseDTO
+            {
+                Id = h.Id,
+                Name = h.Name,
+                Description = h.Description,
+                PricePerNight = h.PricePerNight,
+                Address = "Đang cập nhật...", // Cần include Location nếu muốn hiện
+                Status = h.Status
+                // ... Map thêm các trường cần thiết
+            });
+        }
+
+        public async Task<bool> IsHomestayOwnerAsync(Guid homestayId, Guid ownerId)
+        {
+            var homestay = await _unitOfWork.Homestays.GetByIdAsync(homestayId);
+            return homestay != null && homestay.OwnerId == ownerId;
+        }
+
         public async Task ReorderHomestayImagesAsync(Guid homestayId, List<Guid> sortedImageIds)
         {
             // 1. Lấy tất cả ảnh của homestay này từ DB

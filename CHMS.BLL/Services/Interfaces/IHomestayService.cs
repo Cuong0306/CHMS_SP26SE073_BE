@@ -28,5 +28,8 @@ namespace CHMS.BLL.Services.Interfaces
         Task DeleteHomestayImageAsync(Guid photoId);
 
         Task ReorderHomestayImagesAsync(Guid homestayId, List<Guid> sortedImageIds);
+
+        Task<IEnumerable<HomestayResponseDTO>> GetHomestaysByOwnerIdAsync(Guid ownerId);
+        Task<bool> IsHomestayOwnerAsync(Guid homestayId, Guid ownerId); // Hàm check quyền sở hữu
     }
 }
