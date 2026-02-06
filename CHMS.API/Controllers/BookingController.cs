@@ -112,5 +112,20 @@ namespace CHMS.API.Controllers
             // Trả về object đơn giản chứa text
             return Ok(ApiResponse<object>.SuccessResult(new { Policy = policy }));
         }
+
+        [HttpPost("{id}/special-requests")]
+        public async Task<IActionResult> AddSpecialRequest(Guid id, [FromBody] string request)
+        {
+            try
+            {
+                var userId = GetUserId();
+                await _bookingService.AddSpecialRequestAsync(id, userId, request);
+                return Ok(ApiResponse<object>.SuccessResult(null, "Đã ghi nhận yêu cầu đặc biệt."));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ApiResponse<object>.ErrorResult(ex.Message));
+            }
+        }
     }
 }

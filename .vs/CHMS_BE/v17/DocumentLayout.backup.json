@@ -384,7 +384,7 @@
               "RelativeDocumentMoniker": "CHMS.API\\Controllers\\BookingController.cs",
               "ToolTip": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.API\\Controllers\\BookingController.cs",
               "RelativeToolTip": "CHMS.API\\Controllers\\BookingController.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAmwGwAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAFMAAAAAAAAAAAA8wHwAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-06T17:32:50.845Z",
               "EditorCaption": ""
@@ -399,8 +399,7 @@
               "RelativeToolTip": "CHMS.BLL\\Services\\Interfaces\\IBookingService.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAUwB8AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T17:15:40.11Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-06T17:15:40.11Z"
             },
             {
               "$type": "Document",
@@ -412,8 +411,7 @@
               "RelativeToolTip": "CHMS.BLL\\Services\\Implementations\\BookingService.cs",
               "ViewState": "AgIAAL0AAAAAAAAAAAAYwAMBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T17:15:00.136Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-06T17:15:00.136Z"
             },
             {
               "$type": "Document",
