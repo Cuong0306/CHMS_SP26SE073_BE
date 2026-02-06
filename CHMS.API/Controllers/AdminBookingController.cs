@@ -35,5 +35,19 @@ namespace CHMS.API.Controllers
 
             return Ok(ApiResponse<object>.SuccessResult(result));
         }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateStatus(Guid id, [FromBody] string status)
+        {
+            try
+            {
+                await _bookingService.UpdateBookingStatusAsync(id, status);
+                return Ok(ApiResponse<object>.SuccessResult(null, "Cập nhật trạng thái thành công!"));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ApiResponse<object>.ErrorResult(ex.Message));
+            }
+        }
     }
 }
