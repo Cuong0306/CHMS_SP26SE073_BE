@@ -26,5 +26,10 @@ namespace CHMS.BLL.Services.Interfaces
 
 
         public Task UpdateBookingStatusAsync(Guid bookingId, string newStatus);
+
+        Task<BookingResponseDTO?> GetBookingDetailForCustomerAsync(Guid bookingId, Guid customerId);
+        Task ModifyBookingAsync(Guid bookingId, Guid customerId, BookingRequestDTO request);
+        Task<string> GetCancellationPolicyAsync(Guid bookingId);
+        Task AddSpecialRequestAsync(Guid bookingId, Guid customerId, string specialRequest);
     }
 }

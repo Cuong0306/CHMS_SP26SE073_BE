@@ -79,5 +79,17 @@ namespace CHMS.API.Controllers
                 return BadRequest(ApiResponse<object>.ErrorResult(ex.Message));
             }
         }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetDetail(Guid id)
+        {
+            var userId = GetUserId();
+            var result = await _bookingService.GetBookingDetailForCustomerAsync(id, userId);
+
+            if (result == null)
+                return NotFound(ApiResponse<object>.ErrorResult("Không tìm thấy booking hoặc bạn không có quyền xem."));
+
+            return Ok(ApiResponse<object>.SuccessResult(result));
+        }
     }
 }

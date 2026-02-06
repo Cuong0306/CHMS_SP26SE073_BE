@@ -190,5 +190,79 @@ namespace CHMS.BLL.Services.Implementations
             _unitOfWork.Bookings.Update(booking);
             await _unitOfWork.SaveChangesAsync();
         }
+
+        public async Task<BookingResponseDTO?> GetBookingDetailForCustomerAsync(Guid bookingId, Guid customerId)
+        {
+            var booking = await _unitOfWork.Bookings.GetByIdAsync(bookingId);
+            if (booking == null || booking.CustomerId != customerId) return null; // Không tìm thấy hoặc không phải chủ
+            return MapToDTO(booking);
+        }
+
+        public async Task ModifyBookingAsync(Guid bookingId, Guid customerId, BookingRequestDTO request)
+        {
+            var booking = await _unitOfWork.Bookings.GetByIdAsync(bookingId);
+            if (booking == null) throw new Exception("Booking not found");
+            if (booking.CustomerId != customerId) throw new Exception("Unauthorized");
+
+            if (booking.Status != "PENDING")
+                throw new Exception("Chỉ có thể sửa thông tin khi đơn đặt phòng đang chờ duyệt (PENDING).");
+
+            // Validate ngày
+            if (request.CheckIn >= request.CheckOut)
+                throw new Exception("Ngày Check-out phải sau ngày Check-in.");
+
+            // Check availability (trừ chính booking này ra)
+            var conflict = await _unitOfWork.Bookings.GetAllAsync(b =>
+                b.HomestayId == booking.HomestayId &&
+                b.Id != bookingId && // <--- Quan trọng: Không check trùng với chính nó
+                b.Status != "CANCELLED" &&
+                b.Status != "REJECTED" &&
+                request.CheckIn < b.CheckOut &&
+                request.CheckOut > b.CheckIn
+            );
+
+            if (conflict.Any())
+                throw new Exception("Lịch mới bạn chọn đã bị trùng.");
+
+            // Tính lại tiền
+            var homestay = await _unitOfWork.Homestays.GetByIdAsync(booking.HomestayId);
+            int nights = request.CheckOut.DayNumber - request.CheckIn.DayNumber;
+
+            // Cập nhật thông tin
+            booking.CheckIn = request.CheckIn;
+            booking.CheckOut = request.CheckOut;
+            booking.GuestsCount = request.GuestsCount;
+            booking.TotalNights = nights;
+            booking.SubTotal = homestay.PricePerNight * nights;
+            booking.TotalPrice = booking.SubTotal - booking.DiscountAmount;
+            booking.UpdatedAt = DateTime.UtcNow;
+
+            _unitOfWork.Bookings.Update(booking);
+            await _unitOfWork.SaveChangesAsync();
+        }
+
+        public async Task<string> GetCancellationPolicyAsync(Guid bookingId)
+        {
+            // Ở đây tạm thời trả về text cứng hoặc lấy từ config/homestay
+            // Nếu homestay có trường CancellationPolicy thì query ra
+            return "Miễn phí hủy phòng trong vòng 24h sau khi đặt. Hủy trước 5 ngày hoàn 100%. Hủy sau đó không hoàn tiền.";
+        }
+
+        public async Task AddSpecialRequestAsync(Guid bookingId, Guid customerId, string specialRequest)
+        {
+            var booking = await _unitOfWork.Bookings.GetByIdAsync(bookingId);
+            if (booking == null) throw new Exception("Booking not found");
+            if (booking.CustomerId != customerId) throw new Exception("Unauthorized");
+
+            // Cho phép sửa request kể cả khi đã confirm, miễn là chưa check-out
+            if (booking.Status == "COMPLETED" || booking.Status == "CANCELLED")
+                throw new Exception("Không thể thêm yêu cầu cho đơn hàng đã kết thúc.");
+
+            booking.SpecialRequests = specialRequest;
+            booking.UpdatedAt = DateTime.UtcNow;
+
+            _unitOfWork.Bookings.Update(booking);
+            await _unitOfWork.SaveChangesAsync();
+        }
     }
 }
