@@ -174,6 +174,28 @@ namespace CHMS.BLL.Services.Implementations
             };
         }
 
+        public async Task UpdateHomestayAmenitiesAsync(Guid homestayId, List<Guid> amenityIds)
+        {
+            var homestay = await _unitOfWork.Homestays.GetByIdAsync(homestayId);
+            if (homestay == null) throw new Exception("Homestay not found");
+
+            // Xóa hết cái cũ
+            var current = await _unitOfWork.HomestayAmenities.GetAllAsync(x => x.HomestayId == homestayId);
+            if (current.Any()) _unitOfWork.HomestayAmenities.DeleteRange(current);
+
+            // Thêm cái mới
+            if (amenityIds != null && amenityIds.Any())
+            {
+                var newAmenities = amenityIds.Select(aid => new HomestayAmenity
+                {
+                    HomestayId = homestayId,
+                    AmenityId = aid
+                });
+                await _unitOfWork.HomestayAmenities.AddRangeAsync(newAmenities);
+            }
+            await _unitOfWork.SaveChangesAsync();
+        }
+
         public async Task UpdateHomestayAsync(Guid id, UpdateHomestayRequestDTO dto)
         {
             var homestay = await _unitOfWork.Homestays.GetByIdAsync(id);

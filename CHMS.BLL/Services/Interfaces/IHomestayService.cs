@@ -21,5 +21,7 @@ namespace CHMS.BLL.Services.Interfaces
         public Task UpdateStatusAsync(Guid id, string newStatus);
 
         public Task DeleteHomestayAsync(Guid id);
+
+        Task UpdateHomestayAmenitiesAsync(Guid homestayId, List<Guid> amenityIds);
     }
 }

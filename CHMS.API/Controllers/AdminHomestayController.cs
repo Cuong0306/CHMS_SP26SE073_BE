@@ -94,7 +94,19 @@ namespace CHMS.API.Controllers
             }
         }
 
-
+        [HttpPut("{id}/amenities")]
+        public async Task<IActionResult> UpdateAmenities(Guid id, [FromBody] List<Guid> amenityIds)
+        {
+            try
+            {
+                await _homestayService.UpdateHomestayAmenitiesAsync(id, amenityIds);
+                return Ok(ApiResponse<object>.SuccessResult(null, "Cập nhật tiện nghi cho homestay thành công!"));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ApiResponse<object>.ErrorResult(ex.Message));
+            }
+        }
 
     }
 }
