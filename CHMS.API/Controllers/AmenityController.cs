@@ -40,5 +40,20 @@ namespace CHMS.API.Controllers
                 return BadRequest(ApiResponse<object>.ErrorResult(ex.Message));
             }
         }
+
+        [HttpPut("api/admin/amenities/{id}")]
+        //[Authorize(Roles = "Admin")]
+        public async Task<IActionResult> Update(Guid id, [FromBody] AmenityRequestDTO request)
+        {
+            try
+            {
+                await _amenityService.UpdateAmenityAsync(id, request);
+                return Ok(ApiResponse<object>.SuccessResult(null, "Cập nhật thành công!"));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ApiResponse<object>.ErrorResult(ex.Message));
+            }
+        }
     }
 }
