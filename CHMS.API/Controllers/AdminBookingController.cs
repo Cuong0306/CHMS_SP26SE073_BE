@@ -25,5 +25,15 @@ namespace CHMS.API.Controllers
             var result = await _bookingService.GetAllBookingsAsync();
             return Ok(ApiResponse<object>.SuccessResult(result));
         }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById(Guid id)
+        {
+            var result = await _bookingService.GetBookingByIdAsync(id);
+            if (result == null)
+                return NotFound(ApiResponse<object>.ErrorResult("Không tìm thấy booking."));
+
+            return Ok(ApiResponse<object>.SuccessResult(result));
+        }
     }
 }
