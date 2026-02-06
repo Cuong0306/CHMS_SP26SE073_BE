@@ -36,5 +36,20 @@ namespace CHMS.API.Controllers
                 return BadRequest(ApiResponse<object>.ErrorResult(ex.Message));
             }
         }
+
+        [HttpPost]
+        public async Task<IActionResult> Create([FromBody] BookingRequestDTO request)
+        {
+            try
+            {
+                var userId = GetUserId();
+                var result = await _bookingService.CreateBookingAsync(userId, request);
+                return Ok(ApiResponse<object>.SuccessResult(result, "Đặt phòng thành công!"));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ApiResponse<object>.ErrorResult(ex.Message));
+            }
+        }
     }
 }

@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\github\\CHMS_SP26SE073_BE\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{511A0264-4086-4A8F-82CC-69EF32A8ACA8}|CHMS.BLL\\CHMS.BLL.csproj|d:\\github\\chms_sp26se073_be\\chms.bll\\services\\interfaces\\ibookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{511A0264-4086-4A8F-82CC-69EF32A8ACA8}|CHMS.BLL\\CHMS.BLL.csproj|solutionrelative:chms.bll\\services\\interfaces\\ibookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{46B26A92-2CB8-46E5-9637-9A8457D3F7BC}|CHMS.API\\CHMS.API.csproj|d:\\github\\chms_sp26se073_be\\chms.api\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{46B26A92-2CB8-46E5-9637-9A8457D3F7BC}|CHMS.API\\CHMS.API.csproj|solutionrelative:chms.api\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{511A0264-4086-4A8F-82CC-69EF32A8ACA8}|CHMS.BLL\\CHMS.BLL.csproj|d:\\github\\chms_sp26se073_be\\chms.bll\\services\\interfaces\\ibookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{511A0264-4086-4A8F-82CC-69EF32A8ACA8}|CHMS.BLL\\CHMS.BLL.csproj|solutionrelative:chms.bll\\services\\interfaces\\ibookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{46B26A92-2CB8-46E5-9637-9A8457D3F7BC}|CHMS.API\\CHMS.API.csproj|d:\\github\\chms_sp26se073_be\\chms.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -242,7 +242,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 166,
-          "SelectedChildIndex": 30,
+          "SelectedChildIndex": 29,
           "Children": [
             {
               "$type": "Bookmark",
@@ -362,20 +362,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "BookingController.cs",
               "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.API\\Controllers\\BookingController.cs",
               "RelativeDocumentMoniker": "CHMS.API\\Controllers\\BookingController.cs",
               "ToolTip": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.API\\Controllers\\BookingController.cs",
               "RelativeToolTip": "CHMS.API\\Controllers\\BookingController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAYwDQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-06T17:32:50.845Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "IBookingService.cs",
               "DocumentMoniker": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.BLL\\Services\\Interfaces\\IBookingService.cs",
               "RelativeDocumentMoniker": "CHMS.BLL\\Services\\Interfaces\\IBookingService.cs",
@@ -396,8 +396,7 @@
               "RelativeToolTip": "CHMS.BLL\\Services\\Implementations\\BookingService.cs",
               "ViewState": "AgIAAIQAAAAAAAAAAAAewKQAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T17:15:00.136Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-06T17:15:00.136Z"
             },
             {
               "$type": "Document",
@@ -409,8 +408,7 @@
               "RelativeToolTip": "CHMS.BLL\\DTOs\\Responses\\Booking\\BookingResponseDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T17:11:56.425Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-06T17:11:56.425Z"
             },
             {
               "$type": "Document",
@@ -422,8 +420,7 @@
               "RelativeToolTip": "CHMS.BLL\\DTOs\\Requests\\Booking\\BookingRequestDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T17:11:01.07Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-06T17:11:01.07Z"
             },
             {
               "$type": "Document",
@@ -435,8 +432,7 @@
               "RelativeToolTip": "CHMS.Domain\\Entities\\Booking.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAkwEQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T17:04:42.035Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-06T17:04:42.035Z"
             },
             {
               "$type": "Document",
@@ -448,8 +444,7 @@
               "RelativeToolTip": "CHMS.API\\Controllers\\ManagerHomestayController.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAowBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T16:14:48.704Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-06T16:14:48.704Z"
             },
             {
               "$type": "Document",
@@ -689,8 +684,7 @@
               "RelativeToolTip": "CHMS.BLL\\DTOs\\Requests\\ForgotPasswordRequestDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-30T08:43:54.714Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-30T08:43:54.714Z"
             },
             {
               "$type": "Document",
@@ -990,8 +984,7 @@
               "RelativeToolTip": "CHMS.API\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T04:19:11.067Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-27T04:19:11.067Z"
             },
             {
               "$type": "Document",
@@ -1027,8 +1020,7 @@
               "RelativeToolTip": "CHMS.DAL\\Common\\UnitOfWork.cs",
               "ViewState": "AgIAACsAAAAAAAAAAAAkwEsAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T04:14:55.939Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-27T04:14:55.939Z"
             },
             {
               "$type": "Document",
@@ -1040,8 +1032,7 @@
               "RelativeToolTip": "CHMS.DAL\\Common\\IUnitOfWork.cs",
               "ViewState": "AgIAACAAAAAAAAAAAAAuwBwAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T04:14:38.684Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-27T04:14:38.684Z"
             },
             {
               "$type": "Document",
