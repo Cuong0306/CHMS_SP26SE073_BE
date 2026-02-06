@@ -332,7 +332,7 @@
               "RelativeDocumentMoniker": "CHMS.API\\Controllers\\AmenityController.cs",
               "ToolTip": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.API\\Controllers\\AmenityController.cs",
               "RelativeToolTip": "CHMS.API\\Controllers\\AmenityController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-06T14:06:50.417Z",
               "EditorCaption": ""
@@ -347,8 +347,7 @@
               "RelativeToolTip": "CHMS.BLL\\Services\\Implementations\\AmenityService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T14:05:28.626Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-06T14:05:28.626Z"
             },
             {
               "$type": "Document",
@@ -360,8 +359,7 @@
               "RelativeToolTip": "CHMS.BLL\\Services\\Interfaces\\IAmenityService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T14:05:02.291Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-06T14:05:02.291Z"
             },
             {
               "$type": "Document",
@@ -373,8 +371,7 @@
               "RelativeToolTip": "CHMS.BLL\\DTOs\\Responses\\Amenity\\AmenityResponseDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T14:03:43.362Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-06T14:03:43.362Z"
             },
             {
               "$type": "Document",
@@ -386,8 +383,7 @@
               "RelativeToolTip": "CHMS.BLL\\DTOs\\Requests\\Amenity\\AmenityRequestDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T14:02:41.103Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-06T14:02:41.103Z"
             },
             {
               "$type": "Document",
@@ -399,8 +395,7 @@
               "RelativeToolTip": "CHMS.API\\Controllers\\AdminHomestayController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-04T11:58:35.182Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-04T11:58:35.182Z"
             },
             {
               "$type": "Document",
@@ -844,8 +839,7 @@
               "RelativeToolTip": "CHMS.API\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T04:19:11.067Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-27T04:19:11.067Z"
             },
             {
               "$type": "Document",
@@ -881,8 +875,7 @@
               "RelativeToolTip": "CHMS.DAL\\Common\\UnitOfWork.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAAYwEIAAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T04:14:55.939Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-27T04:14:55.939Z"
             },
             {
               "$type": "Document",
@@ -894,8 +887,7 @@
               "RelativeToolTip": "CHMS.DAL\\Common\\IUnitOfWork.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T04:14:38.684Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-27T04:14:38.684Z"
             },
             {
               "$type": "Document",

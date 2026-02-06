@@ -1,4 +1,5 @@
-﻿using CHMS.BLL.DTOs.Responses.Amenity;
+﻿using CHMS.BLL.DTOs.Requests.Amenity;
+using CHMS.BLL.DTOs.Responses.Amenity;
 using CHMS.BLL.Services.Interfaces;
 using CHMS.Domain.Common;
 using Microsoft.AspNetCore.Authorization;
@@ -23,6 +24,21 @@ namespace CHMS.API.Controllers
         {
             var result = await _amenityService.GetAllAmenitiesAsync();
             return Ok(ApiResponse<IEnumerable<AmenityResponseDTO>>.SuccessResult(result));
+        }
+
+        [HttpPost("api/admin/amenities")]
+        //[Authorize(Roles = "Admin")]
+        public async Task<IActionResult> Create([FromBody] AmenityRequestDTO request)
+        {
+            try
+            {
+                await _amenityService.CreateAmenityAsync(request);
+                return Ok(ApiResponse<object>.SuccessResult(null, "Tạo tiện nghi thành công!"));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ApiResponse<object>.ErrorResult(ex.Message));
+            }
         }
     }
 }
