@@ -105,5 +105,12 @@ namespace CHMS.API.Controllers
                 return BadRequest(ApiResponse<object>.ErrorResult(ex.Message));
             }
         }
+        [HttpGet("{id}/cancellation-policy")]
+        public async Task<IActionResult> GetPolicy(Guid id)
+        {
+            var policy = await _bookingService.GetCancellationPolicyAsync(id);
+            // Trả về object đơn giản chứa text
+            return Ok(ApiResponse<object>.SuccessResult(new { Policy = policy }));
+        }
     }
 }
