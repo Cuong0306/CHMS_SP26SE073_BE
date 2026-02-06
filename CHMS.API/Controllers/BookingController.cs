@@ -51,5 +51,19 @@ namespace CHMS.API.Controllers
                 return BadRequest(ApiResponse<object>.ErrorResult(ex.Message));
             }
         }
+        [HttpGet]
+        public async Task<IActionResult> GetMyBookings()
+        {
+            try
+            {
+                var userId = GetUserId();
+                var result = await _bookingService.GetMyBookingsAsync(userId);
+                return Ok(ApiResponse<object>.SuccessResult(result));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ApiResponse<object>.ErrorResult(ex.Message));
+            }
+        }
     }
 }
