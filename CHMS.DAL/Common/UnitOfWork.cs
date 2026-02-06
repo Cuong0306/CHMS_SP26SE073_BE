@@ -35,6 +35,10 @@ public class UnitOfWork : IUnitOfWork
     private IGenericRepository<HomestayImage>? _homestayImageRepository;
     private IGenericRepository<Amenity>? _amenityRepository;
     private IGenericRepository<HomestayAmenity>? _homestayAmenityRepository;
+    private IGenericRepository<Booking> _bookings;
+    private IGenericRepository<Payment> _payments;
+    private IGenericRepository<Cancellation> _cancellations;
+    private IGenericRepository<BookingStatusHistory> _bookingStatusHistories;
 
     public IUserRepository Users => _userRepository ??= new UserRepository(_context);
     // public IHomestayRepository Homestays => _homestayRepository ??= new HomestayRepository(_context);
@@ -66,7 +70,17 @@ public class UnitOfWork : IUnitOfWork
     public IGenericRepository<HomestayAmenity> HomestayAmenities =>
         _homestayAmenityRepository ??= new GenericRepository<HomestayAmenity>(_context);
 
+    public IGenericRepository<Booking> Bookings =>
+        _bookings ??= new GenericRepository<Booking>(_context);
 
+    public IGenericRepository<Payment> Payments =>
+        _payments ??= new GenericRepository<Payment>(_context);
+
+    public IGenericRepository<Cancellation> Cancellations =>
+        _cancellations ??= new GenericRepository<Cancellation>(_context);
+
+    public IGenericRepository<BookingStatusHistory> BookingStatusHistories =>
+        _bookingStatusHistories ??= new GenericRepository<BookingStatusHistory>(_context);
 
     #endregion
 

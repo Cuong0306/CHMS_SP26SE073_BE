@@ -29,6 +29,12 @@ public interface IUnitOfWork : IDisposable
     IGenericRepository<HomestayAmenity> HomestayAmenities { get; }
     IGenericRepository<UserRole> UserRoles { get; }
 
+    IGenericRepository<Booking> Bookings { get; }
+
+    IGenericRepository<Payment> Payments { get; }
+    IGenericRepository<Cancellation> Cancellations { get; }
+    IGenericRepository<BookingStatusHistory> BookingStatusHistories { get; }
+
     IGenericRepository<Role> Roles { get; }
 
     IGenericRepository<RefreshToken> RefreshTokens { get; }

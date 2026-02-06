@@ -26,6 +26,7 @@ builder.Services.AddScoped<IAuthService, CHMS.BLL.Services.Implementations.AuthS
 builder.Services.AddScoped<IHomestayService, HomestayService>();
 builder.Services.AddScoped<IAmenityService, AmenityService>();
 builder.Services.AddScoped<IPhotoService, PhotoService>();
+builder.Services.AddScoped<IBookingService, BookingService>();
 builder.Services.AddScoped<CHMS.DAL.Common.IUnitOfWork, CHMS.DAL.Common.UnitOfWork>();
 builder.Services.AddAutoMapper(cfg =>
 {
