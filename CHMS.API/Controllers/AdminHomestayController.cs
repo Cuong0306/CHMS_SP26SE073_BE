@@ -132,6 +132,20 @@ namespace CHMS.API.Controllers
             return Ok(ApiResponse<string>.SuccessResult(imageUrl, "Upload thành công!"));
         }
 
+        [HttpPut("{id}/photos/reorder")]
+        public async Task<IActionResult> ReorderPhotos(Guid id, [FromBody] List<Guid> sortedImageIds)
+        {
+            try
+            {
+                await _homestayService.ReorderHomestayImagesAsync(id, sortedImageIds);
+                return Ok(ApiResponse<object>.SuccessResult(null, "Đã cập nhật thứ tự ảnh thành công!"));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ApiResponse<object>.ErrorResult(ex.Message));
+            }
+        }
+
 
     }
 }

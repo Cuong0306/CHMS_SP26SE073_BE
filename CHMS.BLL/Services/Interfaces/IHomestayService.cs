@@ -26,5 +26,7 @@ namespace CHMS.BLL.Services.Interfaces
 
         Task AddHomestayImageAsync(Guid homestayId, string imageUrl);
         Task DeleteHomestayImageAsync(Guid photoId);
+
+        Task ReorderHomestayImagesAsync(Guid homestayId, List<Guid> sortedImageIds);
     }
 }

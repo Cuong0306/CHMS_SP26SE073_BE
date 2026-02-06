@@ -208,6 +208,32 @@ namespace CHMS.BLL.Services.Implementations
             };
         }
 
+        public async Task ReorderHomestayImagesAsync(Guid homestayId, List<Guid> sortedImageIds)
+        {
+            // 1. Lấy tất cả ảnh của homestay này từ DB
+            var existingImages = await _unitOfWork.HomestayImages.GetAllAsync(x => x.HomestayId == homestayId);
+            var imageDict = existingImages.ToDictionary(x => x.Id);
+
+            // 2. Duyệt qua danh sách ID gửi lên để cập nhật thứ tự
+            for (int i = 0; i < sortedImageIds.Count; i++)
+            {
+                var imageId = sortedImageIds[i];
+                if (imageDict.ContainsKey(imageId))
+                {
+                    var img = imageDict[imageId];
+                    img.DisplayOrder = i; // 0, 1, 2...
+
+                    // Logic phụ: Ảnh đầu tiên trong list (index 0) sẽ tự động là Ảnh Chính (IsPrimary)
+                    img.IsPrimary = (i == 0);
+
+                    _unitOfWork.HomestayImages.Update(img);
+                }
+            }
+
+            // 3. Lưu thay đổi
+            await _unitOfWork.SaveChangesAsync();
+        }
+
         public async Task UpdateHomestayAmenitiesAsync(Guid homestayId, List<Guid> amenityIds)
         {
             var homestay = await _unitOfWork.Homestays.GetByIdAsync(homestayId);
