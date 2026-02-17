@@ -64,5 +64,35 @@ namespace CHMS.API.Controllers
                 return BadRequest(new { message = ex.Message });
             }
         }
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateEmployee(Guid id, [FromBody] UpdateEmployeeRequestDTO request)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            try
+            {
+                await _employeeService.UpdateEmployeeAsync(id, request);
+                return Ok(new { message = "Cập nhật thông tin thành công." });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteEmployee(Guid id)
+        {
+            try
+            {
+                await _employeeService.DeleteEmployeeAsync(id);
+                return Ok(new { message = "Đã xóa nhân viên (Soft Delete)." });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+        }
     }
 }
