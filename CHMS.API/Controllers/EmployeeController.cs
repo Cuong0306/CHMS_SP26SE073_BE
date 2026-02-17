@@ -1,4 +1,5 @@
-﻿using CHMS.BLL.Services.Interfaces;
+﻿using CHMS.BLL.DTOs.Requests.Employee;
+using CHMS.BLL.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CHMS.API.Controllers
@@ -42,6 +43,24 @@ namespace CHMS.API.Controllers
             }
             catch (Exception ex)
             {
+                return BadRequest(new { message = ex.Message });
+            }
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> CreateEmployee([FromBody] CreateEmployeeRequestDTO request)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            try
+            {
+                await _employeeService.CreateEmployeeAsync(request);
+                return Ok(new { message = "Tạo nhân viên thành công." });
+            }
+            catch (Exception ex)
+            {
+                // Trả về lỗi 400 kèm message (ví dụ: Email trùng)
                 return BadRequest(new { message = ex.Message });
             }
         }

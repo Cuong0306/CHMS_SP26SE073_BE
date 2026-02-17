@@ -25,6 +25,8 @@ namespace CHMS.BLL.DTOs.Requests.Employee
 
         [Phone]
         public string PhoneNumber { get; set; } = string.Empty;
-        public string AvatarUrl { get; internal set; }
+
+        [Url]
+        public string AvatarUrl { get;  set; } = string.Empty;
     }
 }

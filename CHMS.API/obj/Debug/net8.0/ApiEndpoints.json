@@ -544,6 +544,22 @@
   },
   {
     "ContainingType": "CHMS.API.Controllers.EmployeeController",
+    "Method": "CreateEmployee",
+    "RelativePath": "api/employees",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CHMS.BLL.DTOs.Requests.Employee.CreateEmployeeRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CHMS.API.Controllers.EmployeeController",
     "Method": "GetEmployeeById",
     "RelativePath": "api/employees/{id}",
     "HttpMethod": "GET",
