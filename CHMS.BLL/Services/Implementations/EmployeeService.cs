@@ -8,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace CHMS.BLL.Services.Implementations
 {
@@ -102,8 +103,26 @@ namespace CHMS.BLL.Services.Implementations
         // 3. Lấy chi tiết
         public async Task<EmployeeResponseDTO?> GetEmployeeByIdAsync(Guid id)
         {
-            var user = await _unitOfWork.Users.GetByIdAsync(id);
-            return user == null ? null : MapToDTO(user);
+            // 1. Lấy User trước (Repository của bạn chắc chắn chạy đc dòng này)
+            var user = await _unitOfWork.Users.GetAsync(u => u.Id == id);
+
+            if (user == null) return null;
+
+            // 2. Check Role thủ công bằng cách gọi bảng UserRoles
+            // Tìm Role Staff
+            var staffRole = (await _unitOfWork.Roles.GetAllAsync(r => r.Name == "Staff")).FirstOrDefault();
+
+            if (staffRole != null)
+            {
+                // Check xem user này có role Staff ko
+                var isStaff = (await _unitOfWork.UserRoles
+                    .GetAllAsync(ur => ur.UserId == user.Id && ur.RoleId == staffRole.Id))
+                    .Any();
+
+                if (!isStaff) return null; // Không phải Staff thì chặn
+            }
+
+            return MapToDTO(user);
         }
 
         // 4. Cập nhật thông tin
