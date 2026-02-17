@@ -533,6 +533,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "CHMS.API.Controllers.EmployeeController",
+    "Method": "GetAllEmployees",
+    "RelativePath": "api/employees",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CHMS.API.Controllers.EmployeeController",
+    "Method": "GetEmployeeById",
+    "RelativePath": "api/employees/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "CHMS.API.Controllers.ManagerHomestayController",
     "Method": "GetMyHomestays",
     "RelativePath": "api/manager/homestays",

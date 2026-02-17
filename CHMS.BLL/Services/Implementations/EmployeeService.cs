@@ -102,8 +102,26 @@ namespace CHMS.BLL.Services.Implementations
         // 3. Lấy chi tiết
         public async Task<EmployeeResponseDTO?> GetEmployeeByIdAsync(Guid id)
         {
+            // Bước 1: Lấy User
             var user = await _unitOfWork.Users.GetByIdAsync(id);
-            return user == null ? null : MapToDTO(user);
+            if (user == null) return null;
+
+            // Bước 2: (Mới thêm) Check xem User này có phải Staff không?
+
+            // Lấy Role Staff ra trước
+            var staffRole = (await _unitOfWork.Roles.GetAllAsync(r => r.Name == "Staff")).FirstOrDefault();
+            if (staffRole == null) return null; // Lỗi hệ thống chưa có role
+
+            // Check trong bảng UserRoles xem cặp (UserId, RoleId) có tồn tại không
+            var isStaff = (await _unitOfWork.UserRoles
+                .GetAllAsync(ur => ur.UserId == user.Id && ur.RoleId == staffRole.Id))
+                .Any();
+
+            // Nếu không phải Staff -> coi như không tìm thấy (hoặc throw Exception tùy bạn)
+            if (!isStaff) return null;
+
+            // Bước 3: Map data trả về
+            return MapToDTO(user);
         }
 
         // 4. Cập nhật thông tin
