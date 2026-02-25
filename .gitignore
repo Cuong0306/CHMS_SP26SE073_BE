@@ -1,13 +1,28 @@
-# Bỏ qua các thư mục build của Visual Studio
+# === Visual Studio & OS ===
 .vs/
-bin/
-obj/
+[Bb]in/
+[Oo]bj/
+out/
 publish/
+.vscode/
+*.user
+*.userosscache
+*.sln.docstates
 
-# Bỏ qua các thư mục bạn tự tạo lúc deploy
+# === ASP.NET Core ===
+# Bỏ qua các file cấu hình môi trường local nhưng GIỮ LẠI appsettings.json gốc
+appsettings.Development.json
+appsettings.Local.json
+
+# === Deploy & Logs ===
 Deploy_CHMS/
 snap_shot/
 filecsv/
+*.log
 
-# Bỏ qua các file cấu hình cá nhân
-appsettings.Development.json
+# === Secret Protection (Quan trọng để không bị GitHub chặn) ===
+# Chặn mọi file dll/exe lọt vào repo
+*.dll
+*.exe
+*.pdb
+*.cache

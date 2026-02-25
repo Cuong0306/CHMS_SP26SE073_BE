@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup>
-    <ActiveDebugProfile>https</ActiveDebugProfile>
-    <Controller_SelectedScaffolderID>MvcControllerEmptyScaffolder</Controller_SelectedScaffolderID>
-    <Controller_SelectedScaffolderCategoryPath>root/Common/MVC/Controller</Controller_SelectedScaffolderCategoryPath>
-    <NameOfLastUsedPublishProfile>D:\FPT\KLTN\CHMS_SP25SE073_BE\CHMS_SP26SE073_BE\CHMS.API\Properties\PublishProfiles\FolderProfile.pubxml</NameOfLastUsedPublishProfile>
-  </PropertyGroup>
-</Project>
