@@ -1,13 +1,14 @@
-﻿using CHMS.API.Extensions;
+﻿using AutoMapper;
+using CHMS.API.Extensions;
 using CHMS.API.Middlewares;
+using CHMS.BLL.Services.Implementations;
 using CHMS.BLL.Services.Interfaces;
 using CHMS.DAL.Data;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using AutoMapper;
-using CHMS.BLL.Services.Implementations;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
+using Org.BouncyCastle.Pqc.Crypto.Lms;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,8 +17,13 @@ var builder = WebApplication.CreateBuilder(args);
 
 //================================
 // Add DbContext
+//builder.Services.AddDbContext<CoastalHomestayDBContext>(options =>
+//    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 builder.Services.AddDbContext<CoastalHomestayDBContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"))
+           .UseLowerCaseNamingConvention() // <--- THÊM DÒNG NÀY VÀO ĐÂY
+);
 //================================
 
 // ========== SERVICES ==========

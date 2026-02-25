@@ -87,7 +87,7 @@ public class CoastalHomestayDBContext : DbContext
             entity.Property(e => e.PasswordHash).IsRequired().HasMaxLength(255);
             entity.Property(e => e.AvatarUrl).HasMaxLength(255);
             entity.Property(e => e.Status).IsRequired().HasMaxLength(20).HasDefaultValue("ACTIVE");
-            entity.Property(e => e.CreatedAt).HasDefaultValueSql("GETDATE()");
+            entity.Property(e => e.CreatedAt).HasDefaultValueSql("CURRENT_TIMESTAMP");
 
             entity.HasOne(d => d.DeletedByNavigation)
                 .WithMany(p => p.InverseDeletedByNavigation)
@@ -102,7 +102,7 @@ public class CoastalHomestayDBContext : DbContext
 
             entity.Property(e => e.Name).IsRequired().HasMaxLength(50);
             entity.Property(e => e.Description).HasMaxLength(255);
-            entity.Property(e => e.CreatedAt).HasDefaultValueSql("GETDATE()");
+            entity.Property(e => e.CreatedAt).HasDefaultValueSql("CURRENT_TIMESTAMP");
         });
 
         modelBuilder.Entity<Permission>(entity =>
@@ -112,13 +112,13 @@ public class CoastalHomestayDBContext : DbContext
 
             entity.Property(e => e.Name).IsRequired().HasMaxLength(100);
             entity.Property(e => e.Description).HasMaxLength(255);
-            entity.Property(e => e.CreatedAt).HasDefaultValueSql("GETDATE()");
+            entity.Property(e => e.CreatedAt).HasDefaultValueSql("CURRENT_TIMESTAMP");
         });
 
         modelBuilder.Entity<UserRole>(entity =>
         {
             entity.HasKey(e => new { e.UserId, e.RoleId });
-            entity.Property(e => e.AssignedAt).HasDefaultValueSql("GETDATE()");
+            entity.Property(e => e.AssignedAt).HasDefaultValueSql("CURRENT_TIMESTAMP");
 
             entity.HasOne(d => d.User).WithMany(p => p.UserRoles)
                 .HasForeignKey(d => d.UserId).OnDelete(DeleteBehavior.Cascade);
@@ -129,7 +129,7 @@ public class CoastalHomestayDBContext : DbContext
         modelBuilder.Entity<RolePermission>(entity =>
         {
             entity.HasKey(e => new { e.RoleId, e.PermissionId });
-            entity.Property(e => e.AssignedAt).HasDefaultValueSql("GETDATE()");
+            entity.Property(e => e.AssignedAt).HasDefaultValueSql("CURRENT_TIMESTAMP");
 
             entity.HasOne(d => d.Role).WithMany(p => p.RolePermissions)
                 .HasForeignKey(d => d.RoleId).OnDelete(DeleteBehavior.Cascade);
@@ -144,7 +144,7 @@ public class CoastalHomestayDBContext : DbContext
             entity.Property(e => e.Token).IsRequired().HasMaxLength(500);
             entity.Property(e => e.ReplacedByToken).HasMaxLength(500);
             entity.Property(e => e.DeviceInfo).HasMaxLength(255);
-            entity.Property(e => e.CreatedAt).HasDefaultValueSql("GETDATE()");
+            entity.Property(e => e.CreatedAt).HasDefaultValueSql("CURRENT_TIMESTAMP");
 
             entity.HasOne(d => d.User).WithMany(p => p.RefreshTokens)
                 .HasForeignKey(d => d.UserId).OnDelete(DeleteBehavior.Cascade);
@@ -158,7 +158,7 @@ public class CoastalHomestayDBContext : DbContext
             entity.Property(e => e.DocumentUrl).IsRequired().HasMaxLength(255);
             entity.Property(e => e.Status).IsRequired().HasMaxLength(20).HasDefaultValue("PENDING");
             entity.Property(e => e.RejectReason).HasMaxLength(500);
-            entity.Property(e => e.SubmissionDate).HasDefaultValueSql("GETDATE()");
+            entity.Property(e => e.SubmissionDate).HasDefaultValueSql("CURRENT_TIMESTAMP");
 
             entity.HasOne(d => d.User).WithMany(p => p.VerificationDocumentUsers)
                 .HasForeignKey(d => d.UserId).OnDelete(DeleteBehavior.Cascade);
@@ -205,7 +205,7 @@ public class CoastalHomestayDBContext : DbContext
             entity.Property(e => e.Name).IsRequired().HasMaxLength(100);
             entity.Property(e => e.IconUrl).HasMaxLength(255);
             entity.Property(e => e.Category).HasMaxLength(50);
-            entity.Property(e => e.CreatedAt).HasDefaultValueSql("GETDATE()");
+            entity.Property(e => e.CreatedAt).HasDefaultValueSql("CURRENT_TIMESTAMP");
         });
 
         modelBuilder.Entity<Homestay>(entity =>
@@ -219,7 +219,7 @@ public class CoastalHomestayDBContext : DbContext
             entity.Property(e => e.Bedrooms).HasDefaultValue(1);
             entity.Property(e => e.Bathrooms).HasDefaultValue(1);
             entity.Property(e => e.Status).IsRequired().HasMaxLength(20).HasDefaultValue("PENDING");
-            entity.Property(e => e.CreatedAt).HasDefaultValueSql("GETDATE()");
+            entity.Property(e => e.CreatedAt).HasDefaultValueSql("CURRENT_TIMESTAMP");
 
             entity.HasOne(d => d.Owner).WithMany(p => p.HomestayOwners)
                 .HasForeignKey(d => d.OwnerId).OnDelete(DeleteBehavior.Restrict);
@@ -237,7 +237,7 @@ public class CoastalHomestayDBContext : DbContext
             entity.Property(e => e.Caption).HasMaxLength(255);
             entity.Property(e => e.IsPrimary).HasDefaultValue(false);
             entity.Property(e => e.DisplayOrder).HasDefaultValue(0);
-            entity.Property(e => e.CreatedAt).HasDefaultValueSql("GETDATE()");
+            entity.Property(e => e.CreatedAt).HasDefaultValueSql("CURRENT_TIMESTAMP");
 
             entity.HasOne(d => d.Homestay).WithMany(p => p.HomestayImages)
                 .HasForeignKey(d => d.HomestayId).OnDelete(DeleteBehavior.Cascade);
@@ -273,7 +273,7 @@ public class CoastalHomestayDBContext : DbContext
 
             entity.Property(e => e.Name).HasMaxLength(100);
             entity.Property(e => e.Price).HasColumnType("decimal(12,2)");
-            entity.Property(e => e.CreatedAt).HasDefaultValueSql("GETDATE()");
+            entity.Property(e => e.CreatedAt).HasDefaultValueSql("CURRENT_TIMESTAMP");
 
             entity.HasOne(d => d.Homestay).WithMany(p => p.SeasonalPricings)
                 .HasForeignKey(d => d.HomestayId).OnDelete(DeleteBehavior.Cascade);
@@ -292,7 +292,7 @@ public class CoastalHomestayDBContext : DbContext
             entity.Property(e => e.MinBookingAmount).HasColumnType("decimal(12,2)");
             entity.Property(e => e.IsActive).HasDefaultValue(true);
             entity.Property(e => e.CurrentUsage).HasDefaultValue(0);
-            entity.Property(e => e.CreatedAt).HasDefaultValueSql("GETDATE()");
+            entity.Property(e => e.CreatedAt).HasDefaultValueSql("CURRENT_TIMESTAMP");
         });
 
         // ========== BOOKING ==========
@@ -308,7 +308,7 @@ public class CoastalHomestayDBContext : DbContext
             entity.Property(e => e.SpecialRequests).HasMaxLength(500);
             entity.Property(e => e.ContactPhone).HasMaxLength(20);
             entity.Property(e => e.Status).IsRequired().HasMaxLength(20).HasDefaultValue("PENDING");
-            entity.Property(e => e.CreatedAt).HasDefaultValueSql("GETDATE()");
+            entity.Property(e => e.CreatedAt).HasDefaultValueSql("CURRENT_TIMESTAMP");
 
             entity.HasOne(d => d.Customer).WithMany(p => p.BookingCustomers)
                 .HasForeignKey(d => d.CustomerId).OnDelete(DeleteBehavior.Restrict);
@@ -327,7 +327,7 @@ public class CoastalHomestayDBContext : DbContext
             entity.Property(e => e.OldStatus).HasMaxLength(20);
             entity.Property(e => e.NewStatus).IsRequired().HasMaxLength(20);
             entity.Property(e => e.Note).HasMaxLength(500);
-            entity.Property(e => e.ChangedAt).HasDefaultValueSql("GETDATE()");
+            entity.Property(e => e.ChangedAt).HasDefaultValueSql("CURRENT_TIMESTAMP");
 
             entity.HasOne(d => d.Booking).WithMany(p => p.BookingStatusHistories)
                 .HasForeignKey(d => d.BookingId).OnDelete(DeleteBehavior.Cascade);
@@ -343,7 +343,7 @@ public class CoastalHomestayDBContext : DbContext
             entity.Property(e => e.Amount).HasColumnType("decimal(12,2)");
             entity.Property(e => e.Status).IsRequired().HasMaxLength(20).HasDefaultValue("PENDING");
             entity.Property(e => e.TransactionId).HasMaxLength(100);
-            entity.Property(e => e.CreatedAt).HasDefaultValueSql("GETDATE()");
+            entity.Property(e => e.CreatedAt).HasDefaultValueSql("CURRENT_TIMESTAMP");
 
             entity.HasOne(d => d.Booking).WithMany(p => p.Payments)
                 .HasForeignKey(d => d.BookingId).OnDelete(DeleteBehavior.Restrict);
@@ -356,7 +356,7 @@ public class CoastalHomestayDBContext : DbContext
             entity.Property(e => e.Reason).HasMaxLength(500);
             entity.Property(e => e.RefundAmount).HasColumnType("decimal(12,2)").HasDefaultValue(0);
             entity.Property(e => e.RefundStatus).IsRequired().HasMaxLength(20).HasDefaultValue("PENDING");
-            entity.Property(e => e.CreatedAt).HasDefaultValueSql("GETDATE()");
+            entity.Property(e => e.CreatedAt).HasDefaultValueSql("CURRENT_TIMESTAMP");
 
             entity.HasOne(d => d.Booking).WithMany(p => p.Cancellations)
                 .HasForeignKey(d => d.BookingId).OnDelete(DeleteBehavior.Restrict);
@@ -372,7 +372,7 @@ public class CoastalHomestayDBContext : DbContext
 
             entity.Property(e => e.Rating).IsRequired();
             entity.Property(e => e.IsVerified).HasDefaultValue(true);
-            entity.Property(e => e.CreatedAt).HasDefaultValueSql("GETDATE()");
+            entity.Property(e => e.CreatedAt).HasDefaultValueSql("CURRENT_TIMESTAMP");
 
             entity.HasOne(d => d.Booking).WithOne(p => p.Review)
                 .HasForeignKey<Review>(d => d.BookingId).OnDelete(DeleteBehavior.Restrict);
@@ -389,7 +389,7 @@ public class CoastalHomestayDBContext : DbContext
             entity.HasKey(e => e.Id);
 
             entity.Property(e => e.ImageUrl).IsRequired().HasMaxLength(255);
-            entity.Property(e => e.CreatedAt).HasDefaultValueSql("GETDATE()");
+            entity.Property(e => e.CreatedAt).HasDefaultValueSql("CURRENT_TIMESTAMP");
 
             entity.HasOne(d => d.Review).WithMany(p => p.ReviewImages)
                 .HasForeignKey(d => d.ReviewId).OnDelete(DeleteBehavior.Cascade);
@@ -399,7 +399,7 @@ public class CoastalHomestayDBContext : DbContext
         modelBuilder.Entity<Wishlist>(entity =>
         {
             entity.HasKey(e => new { e.UserId, e.HomestayId });
-            entity.Property(e => e.CreatedAt).HasDefaultValueSql("GETDATE()");
+            entity.Property(e => e.CreatedAt).HasDefaultValueSql("CURRENT_TIMESTAMP");
 
             entity.HasOne(d => d.User).WithMany(p => p.Wishlists)
                 .HasForeignKey(d => d.UserId).OnDelete(DeleteBehavior.Cascade);
@@ -415,7 +415,7 @@ public class CoastalHomestayDBContext : DbContext
             entity.Property(e => e.Title).IsRequired().HasMaxLength(150);
             entity.Property(e => e.Priority).IsRequired().HasMaxLength(20).HasDefaultValue("NORMAL");
             entity.Property(e => e.Status).IsRequired().HasMaxLength(20).HasDefaultValue("OPEN");
-            entity.Property(e => e.CreatedAt).HasDefaultValueSql("GETDATE()");
+            entity.Property(e => e.CreatedAt).HasDefaultValueSql("CURRENT_TIMESTAMP");
 
             entity.HasOne(d => d.User).WithMany(p => p.SupportTicketUsers)
                 .HasForeignKey(d => d.UserId).OnDelete(DeleteBehavior.Restrict);
@@ -430,7 +430,7 @@ public class CoastalHomestayDBContext : DbContext
             entity.HasKey(e => e.Id);
 
             entity.Property(e => e.Message).IsRequired();
-            entity.Property(e => e.CreatedAt).HasDefaultValueSql("GETDATE()");
+            entity.Property(e => e.CreatedAt).HasDefaultValueSql("CURRENT_TIMESTAMP");
 
             entity.HasOne(d => d.Ticket).WithMany(p => p.TicketReplies)
                 .HasForeignKey(d => d.TicketId).OnDelete(DeleteBehavior.Cascade);
@@ -447,7 +447,7 @@ public class CoastalHomestayDBContext : DbContext
             entity.Property(e => e.Type).IsRequired().HasMaxLength(50);
             entity.Property(e => e.ReferenceType).HasMaxLength(50);
             entity.Property(e => e.IsRead).HasDefaultValue(false);
-            entity.Property(e => e.CreatedAt).HasDefaultValueSql("GETDATE()");
+            entity.Property(e => e.CreatedAt).HasDefaultValueSql("CURRENT_TIMESTAMP");
 
             entity.HasOne(d => d.User).WithMany(p => p.Notifications)
                 .HasForeignKey(d => d.UserId).OnDelete(DeleteBehavior.Cascade);
@@ -456,7 +456,7 @@ public class CoastalHomestayDBContext : DbContext
         modelBuilder.Entity<Conversation>(entity =>
         {
             entity.HasKey(e => e.Id);
-            entity.Property(e => e.CreatedAt).HasDefaultValueSql("GETDATE()");
+            entity.Property(e => e.CreatedAt).HasDefaultValueSql("CURRENT_TIMESTAMP");
 
             entity.HasOne(d => d.Homestay).WithMany(p => p.Conversations)
                 .HasForeignKey(d => d.HomestayId).OnDelete(DeleteBehavior.Restrict);
@@ -474,7 +474,7 @@ public class CoastalHomestayDBContext : DbContext
 
             entity.Property(e => e.Content).IsRequired();
             entity.Property(e => e.IsRead).HasDefaultValue(false);
-            entity.Property(e => e.CreatedAt).HasDefaultValueSql("GETDATE()");
+            entity.Property(e => e.CreatedAt).HasDefaultValueSql("CURRENT_TIMESTAMP");
 
             entity.HasOne(d => d.Conversation).WithMany(p => p.Messages)
                 .HasForeignKey(d => d.ConversationId).OnDelete(DeleteBehavior.Cascade);
@@ -489,7 +489,7 @@ public class CoastalHomestayDBContext : DbContext
             entity.Property(e => e.SessionId).HasMaxLength(100);
             entity.Property(e => e.Message).IsRequired();
             entity.Property(e => e.Sender).IsRequired().HasMaxLength(10);
-            entity.Property(e => e.CreatedAt).HasDefaultValueSql("GETDATE()");
+            entity.Property(e => e.CreatedAt).HasDefaultValueSql("CURRENT_TIMESTAMP");
 
             entity.HasOne(d => d.User).WithMany(p => p.ChatHistories)
                 .HasForeignKey(d => d.UserId).OnDelete(DeleteBehavior.SetNull);
@@ -504,7 +504,7 @@ public class CoastalHomestayDBContext : DbContext
             entity.Property(e => e.Entity).IsRequired().HasMaxLength(100);
             entity.Property(e => e.IpAddress).HasMaxLength(50);
             entity.Property(e => e.UserAgent).HasMaxLength(500);
-            entity.Property(e => e.CreatedAt).HasDefaultValueSql("GETDATE()");
+            entity.Property(e => e.CreatedAt).HasDefaultValueSql("CURRENT_TIMESTAMP");
 
             entity.HasOne(d => d.User).WithMany(p => p.AuditLogs)
                 .HasForeignKey(d => d.UserId).OnDelete(DeleteBehavior.SetNull);

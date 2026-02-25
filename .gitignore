@@ -1,0 +1,13 @@
+# Bỏ qua các thư mục build của Visual Studio
+.vs/
+bin/
+obj/
+publish/
+
+# Bỏ qua các thư mục bạn tự tạo lúc deploy
+Deploy_CHMS/
+snap_shot/
+filecsv/
+
+# Bỏ qua các file cấu hình cá nhân
+appsettings.Development.json

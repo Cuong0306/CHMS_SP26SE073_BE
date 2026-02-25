@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\github\\CHMS_SP26SE073_BE\\CHMS.BLL\\CHMS.BLL.csproj": {}
+    "D:\\FPT\\KLTN\\CHMS_SP25SE073_BE\\CHMS_SP26SE073_BE\\CHMS.BLL\\CHMS.BLL.csproj": {}
   },
   "projects": {
-    "D:\\github\\CHMS_SP26SE073_BE\\CHMS.BLL\\CHMS.BLL.csproj": {
+    "D:\\FPT\\KLTN\\CHMS_SP25SE073_BE\\CHMS_SP26SE073_BE\\CHMS.BLL\\CHMS.BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.BLL\\CHMS.BLL.csproj",
+        "projectUniqueName": "D:\\FPT\\KLTN\\CHMS_SP25SE073_BE\\CHMS_SP26SE073_BE\\CHMS.BLL\\CHMS.BLL.csproj",
         "projectName": "CHMS.BLL",
-        "projectPath": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.BLL\\CHMS.BLL.csproj",
-        "packagesPath": "C:\\Users\\minhh\\.nuget\\packages\\",
-        "outputPath": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.BLL\\obj\\",
+        "projectPath": "D:\\FPT\\KLTN\\CHMS_SP25SE073_BE\\CHMS_SP26SE073_BE\\CHMS.BLL\\CHMS.BLL.csproj",
+        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+        "outputPath": "D:\\FPT\\KLTN\\CHMS_SP25SE073_BE\\CHMS_SP26SE073_BE\\CHMS.BLL\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\minhh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,18 +26,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\github\\CHMS_SP26SE073_BE\\CHMS.DAL\\CHMS.DAL.csproj": {
-                "projectPath": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.DAL\\CHMS.DAL.csproj"
+              "D:\\FPT\\KLTN\\CHMS_SP25SE073_BE\\CHMS_SP26SE073_BE\\CHMS.DAL\\CHMS.DAL.csproj": {
+                "projectPath": "D:\\FPT\\KLTN\\CHMS_SP25SE073_BE\\CHMS_SP26SE073_BE\\CHMS.DAL\\CHMS.DAL.csproj"
               },
-              "D:\\github\\CHMS_SP26SE073_BE\\CHMS.Domain\\CHMS.Domain.csproj": {
-                "projectPath": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.Domain\\CHMS.Domain.csproj"
+              "D:\\FPT\\KLTN\\CHMS_SP25SE073_BE\\CHMS_SP26SE073_BE\\CHMS.Domain\\CHMS.Domain.csproj": {
+                "projectPath": "D:\\FPT\\KLTN\\CHMS_SP25SE073_BE\\CHMS_SP26SE073_BE\\CHMS.Domain\\CHMS.Domain.csproj"
               }
             }
           }
@@ -47,7 +50,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -102,21 +106,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.309/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\github\\CHMS_SP26SE073_BE\\CHMS.DAL\\CHMS.DAL.csproj": {
+    "D:\\FPT\\KLTN\\CHMS_SP25SE073_BE\\CHMS_SP26SE073_BE\\CHMS.DAL\\CHMS.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.DAL\\CHMS.DAL.csproj",
+        "projectUniqueName": "D:\\FPT\\KLTN\\CHMS_SP25SE073_BE\\CHMS_SP26SE073_BE\\CHMS.DAL\\CHMS.DAL.csproj",
         "projectName": "CHMS.DAL",
-        "projectPath": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.DAL\\CHMS.DAL.csproj",
-        "packagesPath": "C:\\Users\\minhh\\.nuget\\packages\\",
-        "outputPath": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.DAL\\obj\\",
+        "projectPath": "D:\\FPT\\KLTN\\CHMS_SP25SE073_BE\\CHMS_SP26SE073_BE\\CHMS.DAL\\CHMS.DAL.csproj",
+        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+        "outputPath": "D:\\FPT\\KLTN\\CHMS_SP25SE073_BE\\CHMS_SP26SE073_BE\\CHMS.DAL\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\minhh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -124,15 +132,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\github\\CHMS_SP26SE073_BE\\CHMS.Domain\\CHMS.Domain.csproj": {
-                "projectPath": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.Domain\\CHMS.Domain.csproj"
+              "D:\\FPT\\KLTN\\CHMS_SP25SE073_BE\\CHMS_SP26SE073_BE\\CHMS.Domain\\CHMS.Domain.csproj": {
+                "projectPath": "D:\\FPT\\KLTN\\CHMS_SP25SE073_BE\\CHMS_SP26SE073_BE\\CHMS.Domain\\CHMS.Domain.csproj"
               }
             }
           }
@@ -146,12 +153,17 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "EFCore.NamingConventions": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.23, )"
@@ -165,6 +177,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.23, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.11, )"
             }
           },
           "imports": [
@@ -183,21 +199,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.309/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\github\\CHMS_SP26SE073_BE\\CHMS.Domain\\CHMS.Domain.csproj": {
+    "D:\\FPT\\KLTN\\CHMS_SP25SE073_BE\\CHMS_SP26SE073_BE\\CHMS.Domain\\CHMS.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.Domain\\CHMS.Domain.csproj",
+        "projectUniqueName": "D:\\FPT\\KLTN\\CHMS_SP25SE073_BE\\CHMS_SP26SE073_BE\\CHMS.Domain\\CHMS.Domain.csproj",
         "projectName": "CHMS.Domain",
-        "projectPath": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.Domain\\CHMS.Domain.csproj",
-        "packagesPath": "C:\\Users\\minhh\\.nuget\\packages\\",
-        "outputPath": "D:\\github\\CHMS_SP26SE073_BE\\CHMS.Domain\\obj\\",
+        "projectPath": "D:\\FPT\\KLTN\\CHMS_SP25SE073_BE\\CHMS_SP26SE073_BE\\CHMS.Domain\\CHMS.Domain.csproj",
+        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+        "outputPath": "D:\\FPT\\KLTN\\CHMS_SP25SE073_BE\\CHMS_SP26SE073_BE\\CHMS.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\minhh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -205,7 +225,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -223,7 +242,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -244,7 +264,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.309/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
